@@ -1,4 +1,72 @@
 * {
     padding: 0;
     margin: 0;
-} 
+}
+
+/* ----Generales----*/
+
+h1 {
+    font-family: "Lilita One", cursive;
+}
+
+h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+}
+
+/* ----Nav----*/
+
+.navbar {
+    background-color: black;
+    padding: 0px 80px;
+    font-family: "DM Sans", sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.navbar img {
+    width: 72px;
+    padding: 10px 0px;
+}
+
+.navbar li {
+    padding: 0px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navbar-dark {
+    color: white;
+}
+.nav-link {
+    padding: 0px;
+}
+
+.inicio-sesion li {
+    padding: 0px 20px;
+}
+
+
+/* ----Somos Ninjas----*/
+.home-somos-ninjas {
+    height:600px;
+    background-color: #0C0B24;
+}
+
+.somos-ninjas-left {
+    background-color: #0C0B24;
+}
+
+.somos-ninjas-left img{
+    background-color: #0C0B24;
+    padding: 60px;
+}
+
+.somos-ninjas-right {
+    height:600px;
+    background-image: url(../images/home-somos-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
