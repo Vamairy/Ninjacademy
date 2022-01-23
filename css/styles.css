@@ -14,30 +14,30 @@ h2 {
     font-family: "Lilita One", cursive;
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 60px;
-    padding: 96px 0px;
+    font-size: 48px;
+    padding: 140px 0px 80px 0px;
 }
 
 h3 {
     font-family: "Lilita One", cursive;
     font-weight: 500;
-    font-size: 60px;
+    font-size: 40px;
     text-transform: uppercase;
 }
 
 h4 {
     font-family: "Lilita One", cursive;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 32px;
     text-transform: uppercase;
     text-shadow: 2px 0px 15px #0000005f;
-    line-height: 64px;
+    line-height: 40px;
 }
 
 h5 {
     font-family: "Lilita One", cursive;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
@@ -95,14 +95,19 @@ p {
 
 /* ----Somos Ninjas----*/
 
+.home-somos-ninjas h2 {
+    display: none;
+}
+
 .somos-ninjas-left {
-    background-color: #0C0B24;
+    background-image: url(../images/home-somos-background-left.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
     height:604px;
 }
 
 .somos-ninjas-left img{
-    background-color: #0C0B24;
-    padding: 40px;
+    padding: 160px 40px;
 }
 
 .somos-ninjas-right {
@@ -155,7 +160,7 @@ p {
 
 /*---Hacen---*/
 .hacen-container {
-    height: 960px;
+    height: 1060px;
 }
 
 .hacen img {
@@ -196,7 +201,7 @@ p {
     width: 100%;
 }
 
-.que-queremos-separador p {
+.queremos h2 {
     display: none;
 }
 
@@ -207,7 +212,7 @@ p {
 
 .queremos {
     height: 504px;
-    background-image: url(../images/queremos-background.jpeg);
+    background-image: url(../images/queremos-background-xl-2.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -224,6 +229,11 @@ p {
 .mindset-container h2 {
     padding-bottom: 32px;
 }
+/* 
+.mindset-row-content {
+    height: 600px;
+    background-color: #5D5FF0;
+} */
 
 .mindset-container img {
     padding-bottom: 32px;
