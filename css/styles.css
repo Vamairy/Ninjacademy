@@ -72,7 +72,7 @@ p {
 }
 
 .navbar img {
-    width: 72px;
+    width: 80px;
     padding: 10px 0px;
 }
 
@@ -250,4 +250,41 @@ p {
     width: 100%;
     padding: 0px;
     margin-bottom: -5px;
+}
+
+
+/*---Footer---*/.
+
+footer {
+    margin: 100px;
+}
+
+footer img {
+    height: 72px;
+    padding: 16px;
+}
+
+.iconos-redes {
+    width: 56px;
+}
+
+.footer-barra-abajo {
+    height: 56px;
+    font-size: 10px;
+}
+
+.footer-barra-arriba {
+    font-size: 14px;
+}
+
+
+footer a {
+    padding: 16px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+
+footer a:hover {
+    color: #5D5FF0;
 }
