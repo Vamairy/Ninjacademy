@@ -57,7 +57,6 @@ p {
 }
 
 
-
 /* ----Nav----*/
 
 .navbar {
@@ -81,15 +80,21 @@ p {
     font-size: 14px;
     font-weight: bold;
 }
+
 .navbar-dark {
     color: white;
 }
+
 .nav-link {
     padding: 0px;
 }
 
 .inicio-sesion li {
     padding: 0px 20px;
+}
+
+.active {
+    color: black;
 }
 
 
@@ -260,12 +265,12 @@ footer {
 }
 
 footer img {
-    height: 72px;
+    height: 80px;
     padding: 16px;
 }
 
 .iconos-redes {
-    width: 56px;
+    width: 50px;
 }
 
 .footer-barra-abajo {
@@ -277,14 +282,103 @@ footer img {
     font-size: 14px;
 }
 
-
 footer a {
     padding: 16px 0px;
     text-decoration: none;
     color: white;
 }
 
-
-footer a:hover {
+.footer-barra-arriba a:hover {
     color: #5D5FF0;
+}
+
+.footer-barra-abajo a:hover {
+    color: black;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*----1200----*/
+@media (max-width: 1200px){
+    .navbar li {
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .navbar {
+        padding: 0px !important;
+    }
+
+    .navbar>div {
+        margin: 0px 0px !important;
+    }
+
+    .parallax-background {
+        margin-top:-50px;
+    }
+
+    .separador {
+        margin-top:-48px;
+    }
+}
+
+/*----1024----*/
+@media (max-width: 1024px){
+
+
+    .parallax-background {
+        margin-top:-50px;
+    }
+
+    .separador {
+        margin-top:-48px;
+    }
+}
+
+
+/*----992----*/
+@media (max-width: 992px){
+    .nav-link{
+        padding: 10px 0px;
+    }
+
+ /*    .item-final{
+        margin-bottom: 20px;
+    } */
+    
+    .parallax-background {
+        margin-top:-40px;
+    }
+
+    .separador {
+        margin-top:-42px;
+    }
+}
+
+/*----768----*/
+@media (max-width: 768px){
+    
+    .parallax-background {
+        margin-top:-30px;
+    }
+
+    .separador {
+        margin-top:-32px;
+    }
+}
+
+
+/*----576----*/
+@media (max-width: 576px){
+    
+    .parallax-background {
+        margin-top:-30px;
+    }
+
+    .separador {
+        margin-top:-32px;
+    }
+
 }
