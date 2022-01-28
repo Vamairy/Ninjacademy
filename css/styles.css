@@ -15,7 +15,7 @@ h2 {
     font-weight: 500;
     text-transform: uppercase;
     font-size: 48px;
-    padding: 140px 0px 80px 0px;
+    padding: 100px 0px 50px 0px;
 }
 
 h3 {
@@ -30,7 +30,6 @@ h4 {
     font-weight: 400;
     font-size: 32px;
     text-transform: uppercase;
-    text-shadow: 2px 0px 15px #0000005f;
     line-height: 40px;
 }
 
@@ -117,7 +116,7 @@ p {
 
 .somos-ninjas-right {
     height:604px;
-    background-image: url(../images/home-somos-background.jpeg);
+    background-image: url(../images/home-somos-background-right.jpeg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -151,6 +150,7 @@ p {
 .parallax-background h4 {
     z-index: 1;
     text-align:center;
+    text-shadow: 2px 0px 15px #0000005f;
 }
 
 .separador {
@@ -192,7 +192,7 @@ p {
 
 /*---Queremos---*/
 .que-queremos-container {
-    height: 504px;
+    height: 410px;
     z-index: 2;
 }
 
@@ -216,7 +216,7 @@ p {
 }
 
 .queremos {
-    height: 504px;
+    height: 570px;
     background-image: url(../images/queremos-background-xl-2.jpeg);
     background-repeat: no-repeat;
     background-position: center;
@@ -229,6 +229,9 @@ p {
 .mindset-container {
     height: 800px;
     margin-top: -110px;
+    background-image: url(../images/mindset-separador-bottom.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .mindset-container h2 {
@@ -295,6 +298,12 @@ footer a {
 .footer-barra-abajo a:hover {
     color: black;
 }
+
+/*---Pase Ninja---*/
+.pase-ninja {
+    height: 604px;
+}
+
 
 
 /*MEDIA QUERIES*/
