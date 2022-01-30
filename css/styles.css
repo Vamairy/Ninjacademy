@@ -15,7 +15,7 @@ h2 {
     font-weight: 500;
     text-transform: uppercase;
     font-size: 48px;
-    padding: 140px 0px 80px 0px;
+    padding: 100px 0px 50px 0px;
 }
 
 h3 {
@@ -27,16 +27,15 @@ h3 {
 
 h4 {
     font-family: "Lilita One", cursive;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 32px;
     text-transform: uppercase;
-    text-shadow: 2px 0px 15px #0000005f;
     line-height: 40px;
 }
 
 h5 {
     font-family: "Lilita One", cursive;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -44,8 +43,28 @@ h5 {
 
 p {
     font-family: "DM Sans", sans-serif;
+    color: #727272;
 }
 
+.cursor-zoom {
+    cursor: zoom-in;
+}
+
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.lb-data .lb-caption {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 8px;
+    font-family: "DM Sans", sans-serif !important;
+    color: white;
+}
+
+
+/*Background colors*/
 .back-darkblue {
     background-color: #0C0B24;
     color: white;
@@ -56,6 +75,67 @@ p {
     color: white;
 }
 
+/*Buttons*/
+.button-desktop-principal {
+    background-color: #5D5FF0;
+    padding: 10px;
+    margin: 20px 10px;
+    width: 220px;
+    color: white;
+    font-family: "Lilita One", cursive;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.button-secundario-light {
+    background-color: white;
+    padding: 10px;
+    margin: 20px 10px;
+    width: 220px;
+    color: black;
+    font-family: "Lilita One", cursive;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.button-secundario-dark {
+    background-color: #0C0B24;
+    padding: 10px;
+    margin: 20px 10px;
+    width: 220px;
+    color: white;
+    font-family: "Lilita One", cursive;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.button-desktop-principal:hover {
+    width: 228px;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    color: rgba(255, 255, 255, 0.700);
+    
+}
+
+.button-secundario-light:hover {
+    width: 228px;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    color: rgba(0, 0, 0, 0.700);
+}
+
+.button-secundario-dark:hover  {
+    width: 228px;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    color: rgba(255, 255, 255, 0.800);
+}
 
 
 /* ----Nav----*/
@@ -72,7 +152,7 @@ p {
 }
 
 .navbar img {
-    width: 72px;
+    width: 80px;
     padding: 10px 0px;
 }
 
@@ -81,15 +161,21 @@ p {
     font-size: 14px;
     font-weight: bold;
 }
+
 .navbar-dark {
     color: white;
 }
+
 .nav-link {
     padding: 0px;
 }
 
 .inicio-sesion li {
     padding: 0px 20px;
+}
+
+.active {
+    color: black;
 }
 
 
@@ -112,7 +198,7 @@ p {
 
 .somos-ninjas-right {
     height:604px;
-    background-image: url(../images/home-somos-background.jpeg);
+    background-image: url(../images/home-somos-background-right.jpeg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -124,7 +210,7 @@ p {
     color: white
 }
 
-.parallax-background {
+.autenticos .parallax-background {
     height:504px;
     background-image: url(../images/autenticos-background.jpeg);
     background-repeat: no-repeat;
@@ -136,69 +222,255 @@ p {
     margin-left: 0px;
 }
 
-.parallax-background img {
+.autenticos .parallax-background img {
     width: 480px;
     padding: 50px 10px 0px 10px;
     text-align:center;
     position: absolute;
 }
 
-.parallax-background h4 {
+.autenticos .parallax-background h4 {
     z-index: 1;
     text-align:center;
+    text-shadow: 2px 0px 15px #0000005f;
 }
 
-.separador {
+
+.autenticos .separador {
     margin-top:-60px;
     z-index: 1;
     padding: 0px;
 }
 
-.separador img {
+.autenticos .separador img {
     width: 100%;
 }
 
-/*---Hacen---*/
-.hacen-container {
-    height: 1060px;
+/*---Pensamos en grande---*/
+.en-grande {
+    color: white
 }
+
+.en-grande .parallax-background {
+    height:480px;
+    background-image: url(../images/en-grande-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -45px;
+    position: relative;
+    margin-left: 0px;
+}
+
+.en-grande .parallax-background img {
+    width: 480px;
+    padding: 50px 10px 0px 10px;
+    text-align:center;
+    position: absolute;
+}
+
+.en-grande .parallax-background h4 {
+    z-index: 1;
+    text-align:center;
+    text-shadow: 2px 0px 15px #0000005f;
+}
+
+.en-grande .separador {
+    margin-top: 10px;
+    z-index: 1;
+    padding: 0px;
+}
+
+.en-grande .separador-bottom {
+    margin-top: -60px;
+}
+
+.en-grande .separador img {
+    width: 100%;
+}
+
+/*---Detiene---*/
+
+.detiene .parallax-background {
+    height:504px;
+    background-image: url(../images/detiene-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:-60px;
+    position: relative;
+    margin-left: 0px;
+}
+
+.detiene .parallax-background img {
+    width: 520px;
+    padding: 20px 10px 0px 10px;
+}
+
+.detiene .parallax-background h4 {
+    z-index: 1;
+    color: white;
+    text-align:center;
+    text-shadow: 2px 0px 15px #0000005f;
+}
+
+
+.detiene .separador {
+    margin-top:-60px;
+    z-index: 1;
+    padding: 0px;
+}
+
+.detiene .separador img {
+    width: 100%;
+}
+
+
+
+/*---Hacen---*/
 
 .hacen img {
     padding: 40px 0px;
     width: 90%;
 }
 
-.hacen-card {
-    background-image: url(../images/hacen-card-background.jpeg);
-    width: 90%;
-    height: 300px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    padding: 10px;
+.hacen-cards {
+    padding-bottom: 80px;
 }
 
-.hacen-card p {
+.hacen-card {
+    background-image: url(../images/hacen-card-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 98%;
+    height: 300px;
+/*     border-style: solid;
+    border-color: black;
+    border-width: 1px; */
+    padding: 10px;
+    margin: 40px 0px;
+}
+
+.hacen-card h5 {
     font-family: "Lilita One", cursive;
     font-size: 20px;
     line-height: 28px;
     text-transform: uppercase;
 }
 
+.hacen h5 {
+    font-size: 24px;
+}
+
+.cards-necesita {
+    padding-bottom: 80px;
+}
+
+.card-necesita {
+    background-image: url(../images/hacen-card-background.jpeg);
+    width: 98%;
+    height: 300px;
+    padding: 10px;
+    margin: 28px 0px;
+}
+
+.cards-necesita img {
+    width: 100%;
+}
+
+.card-necesita-autentico:hover {
+    background-image: url(../images/necesita-card-autentico.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-positivo:hover {
+    background-image: url(../images/necesita-card-positivo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-curioso:hover {
+    background-image: url(../images/necesita-card-curioso.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-ganas:hover {
+    background-image: url(../images/necesita-card-ganas.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-diversidad:hover {
+    background-image: url(../images/necesita-card-diversidad.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-crecer:hover {
+    background-image: url(../images/necesita-card-crecer.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-respetuosa:hover {
+    background-image: url(../images/necesita-card-respetuosa.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-atreverse:hover {
+    background-image: url(../images/necesita-card-atreverse.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hacen-card:hover h4 {
+    display: none;
+}
+
+
 /*---Queremos---*/
-.que-queremos-container {
-    height: 504px;
+.que-queremos-container{
     z-index: 2;
 }
 
-.que-queremos-separador {
-    background-color: transparent;
+.que-queremos-container .container-fluid {
+    padding: 0px !important;
 }
 
-.que-queremos-separador img{
-    margin-top: -5px;
+.que-queremos-container img {
+    padding: 0px !important;
+    margin-top: -2px;
+}
+
+.que-queremos-separador {
+ 
+    padding: 0px;
+}
+
+.que-queremos-separador {
+    margin-top: -2px;
     padding: 0px;
     width: 100%;
+}
+
+.separador {
+    margin-top: -2px;
+    padding: 0px !important;
+    /* margin: 0px; */
 }
 
 .queremos h2 {
@@ -211,7 +483,7 @@ p {
 }
 
 .queremos {
-    height: 504px;
+    height: 570px;
     background-image: url(../images/queremos-background-xl-2.jpeg);
     background-repeat: no-repeat;
     background-position: center;
@@ -221,28 +493,25 @@ p {
 }
 
 /*---Mindset Ninja---*/
-.mindset-container {
-    height: 800px;
-    margin-top: -110px;
+
+.mindset {
+    padding: 0px;
+    margin-top: -120px;
 }
 
 .mindset-container h2 {
-    padding-bottom: 32px;
+    padding-bottom: 24px;
 }
-/* 
-.mindset-row-content {
-    height: 600px;
-    background-color: #5D5FF0;
-} */
 
 .mindset-container img {
     padding-bottom: 32px;
-    width: 140px;
+    width: 120px;
 }
 
 .mindset-separador {
     background-color: transparent;
     padding: 0px;
+    margin: 0px;
 }
 
 .mindset-separador img {
@@ -250,4 +519,302 @@ p {
     width: 100%;
     padding: 0px;
     margin-bottom: -5px;
+}
+
+.mindset h4 {
+    padding: 40px 0px 0px 0px;
+}
+
+.mindset-separador {
+    width: 100%;
+    margin: 0px;
+}
+
+
+/*---Footer---*/.
+
+footer {
+    margin: 100px;
+    background-color: #5D5FF0;
+}
+
+footer img {
+    height: 80px;
+    padding: 16px;
+}
+
+.iconos-redes {
+    width: 50px;
+}
+
+.footer-barra-abajo {
+    height: 56px;
+    font-size: 10px;
+}
+
+.footer-barra-arriba {
+    font-size: 14px;
+}
+
+footer a {
+    padding: 16px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-barra-arriba a:hover {
+    color: #5D5FF0;
+}
+
+.footer-barra-abajo a:hover {
+    color: black;
+}
+
+
+/*---Pase Ninja---*/
+
+.pase-ninja img {
+ padding: 32px;
+}
+
+.pase-ninja-quiero img {
+    padding-bottom: 16px;
+    margin: 16px;
+}
+
+.pase-ninja-quiero {
+    margin-top: 80px;
+}
+
+.call-to-action {
+    padding-bottom: 80px;
+}
+
+.pase-ninja-quiero h2 {
+    padding: 100px 0px 10px 0px;;
+}
+
+.pase-ninja-separador {
+   padding: 0px;
+}
+
+
+.pase-ninja-separador img {
+    width: 100%;
+ }
+
+/*---Postea---*/
+.postea-imagenes {
+    padding-bottom: 60px;
+}
+
+.postea h5 {
+    font-size: 22px;
+    padding: 40px 0px 80px 0px;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*----1200----*/
+@media (max-width: 1200px){
+    .navbar li {
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .navbar {
+        padding: 0px !important;
+    }
+
+    .navbar>div {
+        margin: 0px 0px !important;
+    }
+
+    .autenticos .parallax-background {
+        margin-top:-50px;
+    }
+
+    .autenticos .separador {
+        margin-top:-48px;
+    }
+
+    .en-grande .parallax-background {
+        margin-top: -50px;
+    }
+
+    .en-grande .separador {
+        margin-top: -20px;
+    }
+
+    .en-grande .separador-bottom {
+        margin-top: -24px;
+    }
+
+    .hacen-cards {
+        padding: 0px 60px 80px 60px;
+    }
+
+    .hacen-card {
+        height: 260px;
+        padding: 20px;
+    }
+
+    .necesita h4 {
+        font-size: 26px;
+        line-height: 120%;
+    }
+
+
+}
+
+
+/*----1024----*/
+@media (max-width: 1024px){
+
+
+    .autenticos .parallax-background {
+        margin-top:-50px;
+    }
+
+    .autenticos .separador {
+        margin-top:-48px;
+    }
+
+    .hacen-card {
+        height: 340px;
+        padding: 32px;
+        margin: 60px 0px;
+    }
+
+    .necesita h4 {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    
+}
+
+
+/*----992----*/
+@media (max-width: 992px){
+    .nav-link{
+        padding: 10px 0px;
+    }
+
+ /*    .item-final{
+        margin-bottom: 20px;
+    } */
+    
+    .autenticos .parallax-background {
+        margin-top:-40px;
+    }
+
+    .autenticos .separador {
+        margin-top:-42px;
+    }
+
+    .en-grande .parallax-background {
+        margin-top: -40px;
+    }
+
+    .en-grande .separador {
+        margin-top: -20px;
+    }
+
+    .en-grande .separador-bottom {
+        margin-top: -24px;
+    }
+
+    .hacen-cards {
+        padding: 0px 20px 80px 20px;
+    }
+
+    .hacen-card {
+        height: 260px;
+        padding: 20px;
+    }
+}
+
+
+
+/*----768----*/
+@media (max-width: 768px){
+    
+    .autenticos .parallax-background {
+        margin-top:-30px;
+    }
+
+    .autenticos .separador {
+        margin-top:-32px;
+    }
+
+
+    .hacen-cards {
+        padding-bottom: 80px;
+    }
+
+    .hacen-card {
+        height: 300px;
+        padding: 10px;
+    }
+}
+
+
+/*----576----*/
+@media (max-width: 576px){
+    
+    .autenticos .parallax-background {
+        margin-top:-20px;
+        height: 400px;
+    }
+
+    .autenticos .separador {
+        margin-top:-22px;
+    }
+
+    .button-secundario-dark {
+        padding: 10px;
+        margin: 20px 0px;
+    }
+
+    .button-secundario-light {
+        padding: 10px;
+        margin: 20px 0px;
+    }
+
+    .parallax-background img {
+        width: 400px;
+        padding: 50px 40px 0px 10px;
+    }
+
+    .somos-ninjas-left {
+        background-image: url(../images/home-somos-background-left.jpeg);
+        background-repeat: no-repeat;
+        background-position: right;
+        height:404px;
+    }
+    
+    .somos-ninjas-left img{
+        padding: 160px 40px;
+    }
+    
+    .somos-ninjas-right {
+        height:404px;
+        background-image: url(../images/home-somos-background-right.jpeg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+    }
+
+    .hacen-cards {
+        padding-bottom: 60px;
+    }
+
+    .hacen-card {
+        height: 230px;
+        padding: 24px;
+    }
+
+
 }
