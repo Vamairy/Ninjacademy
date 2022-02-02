@@ -5,6 +5,7 @@
 </g>
 </g>
 <defs>
+<<<<<<< Updated upstream
 <filter id="filter0_d_135_1032" x="-20.1104" y="-0.0161133" width="1996.48" height="150.947" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -16,6 +17,19 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_135_1032" result="shape"/>
 </filter>
 <clipPath id="clip0_135_1032">
+=======
+<filter id="filter0_d_159_1034" x="-20.1104" y="9.98389" width="1996.48" height="150.947" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="10"/>
+<feGaussianBlur stdDeviation="5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_159_1034"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_159_1034" result="shape"/>
+</filter>
+<clipPath id="clip0_159_1034">
+>>>>>>> Stashed changes
 <rect width="1956" height="156" fill="white"/>
 </clipPath>
 </defs>
