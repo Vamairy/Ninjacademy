@@ -28,6 +28,7 @@
 
 </head>
 <body>
+
 <!--NAVBAR-->
     <!-- MÓDULO GENERAL NAVBAR BOOTSTRAP 5 -->
     <nav class="navbar navbar-expand-lg navbar-dark text-center justify-content-center">
@@ -43,17 +44,17 @@
             <!-- CONTENEDOR LISTA DE VÍNCULOS -->
             <div class="navbar-collapse collapse" id="menu02">
                 <ul class="navbar-nav text-center justify-content-center col-10 col-lg-10 col-sm-12 col-12">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="./index.html">¿Quienes somos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./quiero-ser-ninja.html">Quiero ser Ninja</a>
+                        <a class="nav-link active" href="./quiero-ser.html">Quiero ser Ninja</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./novedades.html">Novedades Ninja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./empresas.html">Para empresas</a>
+                        <a class="nav-link" href="#">Para empresas</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mb-lg-2 nav flex-column justify-content-end inicio-sesion">
@@ -64,30 +65,51 @@
             </div>
         </div>
     </nav>
-    <section class="home-somos-ninjas">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="somos-ninjas-left col-5">
-                    <img src="./images/home-somos-ninjas.svg" class="img-fluid align-items-center" alt="Somos Ninjas">
+
+    <section>
+        <div class="pase-ninja-quiero container-fluid text-center back-purple">
+            <div class="row justify-content-center text-center back-purple">
+                <div class="col-10">
+                    <h2>¡Quiero ser Ninja!</h2>
+                    <h4>Para formar parte de nuestra comunidad necesitas un pase...</h4>
                 </div>
-                <div class="somos-ninjas-right col-7">
-                    <h2>Hola</h2>
+            </div>
+            <div class="row justify-content-center back-purple">
+                <div class="col-6">
+                    <img class="img-fluid" src="./images/pases-ninja.png" alt="pase ninja">
+                </div>
+            </div>
+            <div class="row justify-content-center back-purple">
+                <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-8">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <h4>¿Ya tienes uno?</h4>
+                        </div>
+                        <div class="call-to-action row">
+                            <div class="col col-md-6">
+                                <button class="button-secundario-light">¡Ya tengo!</button>
+                            </div>
+                            <div class="col col-md-6">
+                                <button class="button-secundario-dark">Aún no, Obtenerlo</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="autenticos">
+
+    <section class="en-grande">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="separador">
-                    <img src="./images/autenticos-separador-top.svg" alt="separador de papel">
+                    <img src="./images/grande-separador-top-1.svg" alt="separador de papel">
                 </div>
                 <div class="parallax-background row justify-content-center align-items-center">
-                    <img class="img-fluid" src="./images/queremos-img-persona.png" alt="chica Ninja">
-                    <h4>Los ninjas somos auténticos</h4>
+                    <h4>Pensamos en grande</h4>
                 </div>
             </div>
-            <div class="row align-items-center">
+            <div class="separador-bottom row align-items-center">
                 <div class="separador">
                     <img src="./images/parallax-separador-bottom.svg" alt="separador de papel">
                 </div>
@@ -95,93 +117,76 @@
         </div>
     </section>
 
-    <section class="hacen">
-        <div class="container hacen-container">
+
+    <section class="container necesita">
+        <div class="row justify-content-center text-center">
+            <h2>¿Qué se necesita para ser Ninja?</h2>
+        </div>
+        <div class="row cards-necesita">
+            <div class="col-lg-3 col-md-6">
+                <div class="hacen-card card-necesita-autentico row align-items-center justify-content-center text-center">
+                    <h4>Ser auténtico</h4>
+                </div>
+                <div class="hacen-card card-necesita-positivo row align-items-center justify-content-center text-center">
+                    <h4>Pensar positivo</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="hacen-card card-necesita-curioso row align-items-center justify-content-center text-center">
+                    <h4>Ser muy curioso</h4>
+                </div>
+                <div class="hacen-card card-necesita-ganas row align-items-center justify-content-center text-center">
+                    <h4>Ganas de mejorar el mundo</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="hacen-card card-necesita-diversidad row align-items-center justify-content-center text-center">
+                    <h4>Valorar la diversidad</h4>
+                </div>
+                <div class="hacen-card card-necesita-crecer row align-items-center justify-content-center text-center">
+                    <h4>Ganas de crecer</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="hacen-card card-necesita-respetuosa row align-items-center justify-content-center text-center">
+                    <h4>Tener actitud respetuosa</h4>
+                </div>
+                <div class="hacen-card card-necesita-atreverse row align-items-center justify-content-center text-center">
+                    <h4>Atreverse a ser diferente</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="listo-para">
+        <div class="pase-ninja-separador container-fluid text-center">
             <div class="row">
-                <div class="col-12 text-center ">
-                    <h2>¿Qué hacen los ninjas?</h2>
-                </div>
+                <img src="./images/postea-separador-top.svg" alt="">
             </div>
-            <div class="row justify-content-center hacen-cards">
-                <div class="col-xl-3 col-sm-6 text-center">
-                    <div class="row justify-content-center">
-                        <img class="image-fluid" src="./images/hacen-img-1.png" alt="">
-                    </div>
-                    <div class="hacen-card row align-items-center justify-content-center">
-                        <h5>Aprenden de los expertos de las empresas más reconocidas</h5>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-sm-6 text-center justify-content-center">
-                    <div class="hacen-card row align-items-center justify-content-center">
-                        <h5>asisten a eventos, fiestas... ¡Y viajes!</h5>
-                    </div>
-                    <div class="row justify-content-center">
-                        <img class="image-fluid" src="./images/hacen-img-2.png" alt="">
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-sm-6 text-center justify-content-center">
-                    <div class="row justify-content-center">
-                        <img class="image-fluid" src="./images/hacen-img-3.png" alt="">
-                    </div>
-                    <div class="hacen-card row align-items-center justify-content-center">
-                        <h5>hacen amigos de otras carreras, universidades y países</h5>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-sm-6 text-center justify-content-center">
-                    <div class="hacen-card row align-items-center justify-content-center">
-                        <h5>Participan en concursos y desafíos a problemas reales</h5>
-                    </div>
-                    <div class="row justify-content-center">
-                        <img class="image-fluid" src="./images/hacen-img-4.png" alt="">
-                    </div>
-                </div>
-            </div>      
-        </div>
-    </section>
-    
-    <section class="que-queremos-container">
-        <div class="container-fluid">
-            <div class="back-darkblue">
-                <div class="row back-darkblue">
-                    <img class="separador que-queremos-separador" src="./images/queremos-separador.svg" alt="separador">
-                </div>
-                <div class="row back-darkblue justify-content-center">
-                    <div class="col-10 text-center">
-                        <h2>¿Qué queremos para los Ninjas?</h2>
-                    </div>
-                </div>
+            <div class="row back-purple">
+                <h2>¿Listo para ser Ninja?</h2>
             </div>
-            <div class="row separador">
-                <img src="./images/queremos-separador-2.png" alt="separador">
-            </div>
-        </div>
-    </section>
-
-    <section class="queremos">
-        <div class="container-fluid">
-            <div class="row">
-                <h2>hola</h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="mindset">
-        <div class="container-fluid mindset">
-            <div class="row mindset-separador justify-content-center">
-                <img src="./images/mindset-separador-top.png" alt="separador">
-            </div>
-            <div class="row justify-content-center text-center back-purple">
-                <h2>Mindset Ninja</h2>
+            <div class="row justify-content-center back-purple">
                 <div class="col-8">
-                    <img src="./images/mindset-mundo.png" alt="">
-                    <h4> Los ninjas  no nos preguntamos si vamos a cambiar el mundo, nos preguntamos cómo vamos a cambiarlo</h4>
+                    <img class="img-fluid" src="./images/pases-ninja.png" alt="pase ninja">
                 </div>
             </div>
-            <div >
-                <img class="mindset-separador" src="./images/mindset-separador-bottom.png" alt="">
+            <div class="row justify-content-center back-purple">
+                <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-8">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <h4>¿Ya tienes un pase?</h4>
+                        </div>
+                        <div class="call-to-action row justify-content-center">
+                            <div class="col col-md-6">
+                                <button class="button-secundario-light">¡Ya tengo!</button>
+                            </div>
+                            <div class="col col-md-6">
+                                <button class="button-secundario-dark">Aún no, Obtenerlo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -229,7 +234,7 @@
                             <a href="./index.html">¿Quienes somos?</a>
                         </div>
                         <div class="col">
-                            <a href="./quiero-ser-ninja.html">¡Quiero ser Ninja!</a>
+                            <a href="./quiero-ser.html">¡Quiero ser Ninja!</a>
                         </div>
                         <div class="col">
                             <a href="#">© 2021, <b>Ninja Academy</b></a>
@@ -246,16 +251,14 @@
         </div>
     </footer>
 
-
-
-
-
 <!--JAVASCRIPT-->
-    <!--LIGHTBOX JS-->
-    <script src="./pluggins/Lightbox/js/lightbox.js"></script>
 
     <!--JQUERY CDN-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!--LIGHTBOX JS-->
+    <script src="./pluggins/Lightbox/js/lightbox.js"></script>
+
 
 <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
