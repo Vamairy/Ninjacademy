@@ -75,6 +75,11 @@ p {
     color: white;
 }
 
+.back-green {
+    background-color: #1B4E65;
+    color: white;
+}
+
 /*Buttons*/
 .button-desktop-principal {
     background-color: #5D5FF0;
@@ -120,7 +125,6 @@ p {
     transition: 0.1s;
     transition-timing-function: ease;
     color: rgba(255, 255, 255, 0.700);
-    
 }
 
 .button-secundario-light:hover {
@@ -177,6 +181,7 @@ p {
 .active {
     color: black;
 }
+
 
 
 /* ----Somos Ninjas----*/
@@ -299,14 +304,14 @@ p {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    margin-top:-60px;
+    margin-top:-50px;
     position: relative;
     margin-left: 0px;
 }
 
 .detiene .parallax-background img {
     width: 520px;
-    padding: 20px 10px 0px 10px;
+    padding: 20px 0px 0px 10px;
 }
 
 .detiene .parallax-background h4 {
@@ -318,7 +323,7 @@ p {
 
 
 .detiene .separador {
-    margin-top:-60px;
+    margin-top:-90px;
     z-index: 1;
     padding: 0px;
 }
@@ -347,9 +352,6 @@ p {
     background-size: cover;
     width: 98%;
     height: 300px;
-/*     border-style: solid;
-    border-color: black;
-    border-width: 1px; */
     padding: 10px;
     margin: 40px 0px;
 }
@@ -532,7 +534,7 @@ p {
 
 /*---Proximamente---*/
 
-.hacen-separador-bottomr{
+.hacen-separador-bottom{
     width: 100%;
 }
 
@@ -588,6 +590,10 @@ footer a {
     margin: 16px;
 }
 
+.listo-para h4 {
+    padding-top: 40px;
+}
+
 .pase-ninja-quiero {
     margin-top: 80px;
 }
@@ -610,15 +616,137 @@ footer a {
  }
 
 /*---Postea---*/
-.postea-imagenes {
-    padding-bottom: 60px;
+.postea-imagenes img:hover {
+    cursor: url("../images/cursor.png"), auto;
 }
 
+.postea-imagenes {
+    padding-bottom: 32px;
+}
+ 
 .postea h5 {
     font-size: 22px;
-    padding: 40px 0px 80px 0px;
+    padding: 40px 0px 100px 0px;
 }
 
+
+/*---Para empresas---*/
+.empresas {
+    background-image: url(../images/empresas-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    margin-top: 72px;
+    color: white;
+}
+
+.empresas h2 {
+    padding: 170px 0px 40px 0px;
+}
+
+.empresas button {
+    margin: 0px 0px 300px 0px;
+}
+
+.empresas .parallax-background {
+    height:504px;
+    background-image: url(../images/empresas-separador-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:-50px;
+    position: relative;
+    margin-left: 0px;
+}
+
+.empresas .parallax-background img {
+    width: 520px;
+    padding: 20px 0px 0px 10px;
+}
+
+.empresas .parallax-background h4 {
+    z-index: 1;
+    color: white;
+    text-align:center;
+    text-shadow: 2px 0px 15px #0000005f;
+}
+
+.empresas .separador {
+    margin-top:-90px;
+    z-index: 1;
+    padding: 0px;
+}
+
+.empresas .separador img {
+    width: 100%;
+}
+
+.empresas .parallax-background h2 {
+    display: none;
+}
+
+.empresas-card {
+    background-image: url(../images/hacen-card-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 98%;
+    padding: 40px 10px;
+    margin: 20px
+}
+
+.empresas-card img {
+    margin: 20px;
+    width: 100%;
+}
+
+.empresas-card-texto {
+    margin: 20px;
+}
+
+.colaborar-caracteristicas h5 {
+    display: none;
+}
+
+
+/*---colaborar---*/
+.colaborar-imagenes img:hover {
+    cursor: url("../images/cursor.png"), auto;
+}
+
+.colaborar-imagenes {
+    padding-bottom: 32px;
+}
+ 
+.colaborar h5 {
+    font-size: 22px;
+    padding: 40px 0px 16px 0px;
+}
+
+.colaborar button {
+    margin-bottom: 80px;
+}
+
+/*---Ya soy---*/
+.ya-soy {
+    background-image: url(../images/ya-soy-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    margin-top: 72px;
+    color: white;
+}
+
+.ya-soy img {
+    width: 80%;
+    padding: 170px 0px 40px 0px;
+}
+
+.ya-soy h4 {
+    width: 100%;
+    padding: 0px 0px 300px 0px;
+}
 
 /*MEDIA QUERIES*/
 
@@ -755,7 +883,6 @@ footer a {
         margin-top:-32px;
     }
 
-
     .hacen-cards {
         padding-bottom: 80px;
     }
@@ -763,6 +890,10 @@ footer a {
     .hacen-card {
         height: 300px;
         padding: 10px;
+    }
+
+    footer a {
+        padding: 0px 0px;
     }
 }
 
