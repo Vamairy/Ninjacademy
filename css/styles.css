@@ -282,7 +282,7 @@ p {
 }
 
 .en-grande .separador {
-    margin-top: 10px;
+    margin-top: 0px;
     z-index: 1;
     padding: 0px;
 }
@@ -353,7 +353,7 @@ p {
     width: 98%;
     height: 300px;
     padding: 10px;
-    margin: 40px 0px;
+    margin: 5px 0px;
 }
 
 .hacen-card h5 {
@@ -459,7 +459,6 @@ p {
 }
 
 .que-queremos-separador {
- 
     padding: 0px;
 }
 
@@ -502,7 +501,7 @@ p {
 }
 
 .mindset-container h2 {
-    padding-bottom: 24px;
+    padding-bottom: 16px;
 }
 
 .mindset-container img {
@@ -536,6 +535,7 @@ p {
 
 .hacen-separador-bottom{
     width: 100%;
+    padding: 0px !important;
 }
 
 
@@ -556,7 +556,7 @@ footer img {
 }
 
 .footer-barra-abajo {
-    height: 56px;
+    padding: 16px 0px 32px 0px;
     font-size: 10px;
 }
 
@@ -585,7 +585,11 @@ footer a {
  padding: 32px;
 }
 
-.pase-ninja-quiero img {
+.pase-ninja-movil {
+    display: none;
+}
+
+.pase-ninja-desktop{
     padding-bottom: 16px;
     margin: 16px;
 }
@@ -610,9 +614,9 @@ footer a {
    padding: 0px;
 }
 
-
 .pase-ninja-separador img {
     width: 100%;
+    margin-bottom: -5px;
  }
 
 /*---Postea---*/
@@ -673,7 +677,7 @@ footer a {
 }
 
 .empresas .separador {
-    margin-top:-90px;
+    margin-top:-80px;
     z-index: 1;
     padding: 0px;
 }
@@ -705,18 +709,21 @@ footer a {
     margin: 20px;
 }
 
+
+/*---colaborar---*/
+
+
 .colaborar-caracteristicas h5 {
     display: none;
 }
 
 
-/*---colaborar---*/
 .colaborar-imagenes img:hover {
     cursor: url("../images/cursor.png"), auto;
 }
 
 .colaborar-imagenes {
-    padding-bottom: 32px;
+    padding-bottom: 16px;
 }
  
 .colaborar h5 {
@@ -728,15 +735,21 @@ footer a {
     margin-bottom: 80px;
 }
 
+.colaborar-partners img {
+    padding: 12px 12px;
+}
+
 /*---Ya soy---*/
 .ya-soy {
     background-image: url(../images/ya-soy-background.jpeg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     background-size: cover;
     margin-top: 72px;
     color: white;
+    padding: 0px;
 }
+
 
 .ya-soy img {
     width: 80%;
@@ -746,6 +759,15 @@ footer a {
 .ya-soy h4 {
     width: 100%;
     padding: 0px 0px 300px 0px;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    --bs-gutter-x: 0rem;
+
 }
 
 /*MEDIA QUERIES*/
@@ -793,6 +815,7 @@ footer a {
     .hacen-card {
         height: 260px;
         padding: 20px;
+        margin: 5px
     }
 
     .necesita h4 {
@@ -800,13 +823,15 @@ footer a {
         line-height: 120%;
     }
 
-
 }
 
 
 /*----1024----*/
 @media (max-width: 1024px){
 
+    .pase-ninja-quiero, .ya-soy, .empresas {
+        margin-top: 64px;
+    }
 
     .autenticos .parallax-background {
         margin-top:-50px;
@@ -817,9 +842,9 @@ footer a {
     }
 
     .hacen-card {
-        height: 340px;
+        height: 240px;
         padding: 32px;
-        margin: 60px 0px;
+        margin: 5px 0px;
     }
 
     .necesita h4 {
@@ -874,6 +899,10 @@ footer a {
 
 /*----768----*/
 @media (max-width: 768px){
+
+    .pase-ninja-quiero, .ya-soy, .empresas {
+        margin-top: 56px;
+    }
     
     .autenticos .parallax-background {
         margin-top:-30px;
@@ -895,12 +924,40 @@ footer a {
     footer a {
         padding: 0px 0px;
     }
+
+    .que-queremos-container h2 {
+        padding-bottom: 0px;
+    }
+
+    .empresas-card {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .empresas-card img {
+        margin: 8px;
+        
+    }
 }
 
 
 /*----576----*/
 @media (max-width: 576px){
     
+    h2 {
+        font-size: 32px;
+        padding: 80px 0px 32px 0px;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
     .autenticos .parallax-background {
         margin-top:-20px;
         height: 400px;
@@ -912,12 +969,12 @@ footer a {
 
     .button-secundario-dark {
         padding: 10px;
-        margin: 20px 0px;
+        margin: 12px 0px;
     }
 
     .button-secundario-light {
         padding: 10px;
-        margin: 20px 0px;
+        margin: 12px 0px;
     }
 
     .parallax-background img {
@@ -949,9 +1006,85 @@ footer a {
     }
 
     .hacen-card {
-        height: 230px;
+        height: 250px;
+        margin: 5px;
         padding: 24px;
     }
 
+    .hacen img {
+        padding: 8px 0px;
+    }
 
+    footer img {
+        padding: 16px 8px 0px 8px;
+    }
+    
+    .iconos-redes {
+        width: 50px;
+    }
+
+    .footer-barra-arriba {
+        padding-bottom: 40px;
+    }
+
+    .footer-link-menu {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .mindset h4 {
+        padding: 40px 0px 80px 0px
+    }
+
+    .ya-soy, .empresas, .pase-ninja-quiero {
+        margin-top: 48px;
+    }
+
+    .pase-ninja-desktop {
+        display: none;
+    }
+
+    .pase-ninja-movil {
+        display: inline-block;
+        padding: 24px 0px;
+    }
+
+    .que-queremos-container img {
+        padding: 0px !important;
+        margin-top: -12px;
+    }
+
+    .que-queremos-container h2 {
+        background-color: #0C0B24;
+        padding-bottom: 80px;
+    }
+
+    .que-queremos-container h2 {
+        padding-bottom: 38px;
+    }
+
+    .autenticos .parallax-background img {
+        width: 380px;
+        padding: 50px 10px 0px 10px;
+        text-align:center;
+        position: absolute;
+    }
+
+    .en-grande .parallax-background {
+        margin-top: -24px;
+    }
+
+    .en-grande .separador-bottom {
+        margin-top: -10px;
+    }
+
+    .empresas-card {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .empresas-card img {
+        margin: 0px;
+        padding-top: 12px;
+    }
 }
