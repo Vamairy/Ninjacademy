@@ -183,7 +183,6 @@ p {
 }
 
 
-
 /* ----Somos Ninjas----*/
 
 .home-somos-ninjas h2 {
@@ -485,7 +484,7 @@ p {
 
 .queremos {
     height: 570px;
-    background-image: url(../images/queremos-background-xl-2.jpeg);
+    background-image: url(../images/queremos-background-xxl.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -617,7 +616,7 @@ footer a {
 .pase-ninja-separador img {
     width: 100%;
     margin-bottom: -5px;
- }
+}
 
 /*---Postea---*/
 .postea-imagenes img:hover {
@@ -633,6 +632,9 @@ footer a {
     padding: 40px 0px 100px 0px;
 }
 
+.postea-imagenes img {
+    padding: 12px 12px;
+}
 
 /*---Para empresas---*/
 .empresas {
@@ -701,7 +703,7 @@ footer a {
 }
 
 .empresas-card img {
-    margin: 20px;
+    margin: 4px;
     width: 100%;
 }
 
@@ -711,12 +713,9 @@ footer a {
 
 
 /*---colaborar---*/
-
-
 .colaborar-caracteristicas h5 {
     display: none;
 }
-
 
 .colaborar-imagenes img:hover {
     cursor: url("../images/cursor.png"), auto;
@@ -772,12 +771,28 @@ footer a {
 
 /*MEDIA QUERIES*/
 
+/*----1400----*/
+@media (max-width: 1400px) {
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-xl-1.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -150px;
+    }
+}
+
 /*----1200----*/
 @media (max-width: 1200px){
     .navbar li {
         padding: 10px;
         font-size: 14px;
         font-weight: bold;
+    }
+    .pase-ninja-quiero, .ya-soy, .empresas {
+        margin-top: 64px;
     }
 
     .navbar {
@@ -794,6 +809,16 @@ footer a {
 
     .autenticos .separador {
         margin-top:-48px;
+    }
+
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-xl.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -150px;
     }
 
     .en-grande .parallax-background {
@@ -873,6 +898,16 @@ footer a {
         margin-top:-42px;
     }
 
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-lg.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -150px;
+    }
+
     .en-grande .parallax-background {
         margin-top: -40px;
     }
@@ -892,6 +927,14 @@ footer a {
     .hacen-card {
         height: 260px;
         padding: 20px;
+    }
+
+    .empresas .separador {
+        margin-top:-26px;
+    }
+
+    .empresas .parallax-background {
+        margin-top: -32px;
     }
 }
 
@@ -925,6 +968,16 @@ footer a {
         padding: 0px 0px;
     }
 
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-md.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -150px;
+    }
+
     .que-queremos-container h2 {
         padding-bottom: 0px;
     }
@@ -935,8 +988,15 @@ footer a {
     }
 
     .empresas-card img {
-        margin: 8px;
-        
+        margin: 0px;
+    }
+
+    .empresas .separador {
+        margin-top:-26px;
+    }
+
+    .empresas .parallax-background {
+        margin-top: -32px;
     }
 }
 
@@ -1037,7 +1097,7 @@ footer a {
     }
 
     .ya-soy, .empresas, .pase-ninja-quiero {
-        margin-top: 48px;
+        margin-top: 40px;
     }
 
     .pase-ninja-desktop {
@@ -1047,6 +1107,16 @@ footer a {
     .pase-ninja-movil {
         display: inline-block;
         padding: 24px 0px;
+    }
+
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-sm.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -150px;
     }
 
     .que-queremos-container img {
@@ -1087,4 +1157,25 @@ footer a {
         margin: 0px;
         padding-top: 12px;
     }
+
+    .empresas .separador {
+        margin-top:-26px;
+    }
+
+    .empresas .parallax-background {
+        margin-top: -22px;
+    }
+
+    /*--------*/
+@media (max-width: 400px) {
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-0.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -150px;
+    }
+}
 }
