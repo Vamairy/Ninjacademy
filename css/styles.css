@@ -171,17 +171,44 @@ p {
 }
 
 .nav-link {
-    padding: 0px;
+    padding: 8px 0px;
 }
 
 .inicio-sesion li {
     padding: 0px 20px;
 }
 
-.active {
-    color: black;
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
 }
 
+.active {
+    color: white;
+    background-image: url(../images/nav-background-link.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Lilita One", cursive;
+    text-transform: uppercase;
+    opacity: 10;
+}
+
+.item-final img {
+    width: 40px;
+}
+
+.item-final:hover {
+    opacity: 0.5;
+}
+
+
+.item-final p {
+    font-family: "Lilita One", cursive;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: left;
+    line-height: 18px;
+    margin-bottom: 0px;
+}
 
 /* ----Somos Ninjas----*/
 
@@ -251,9 +278,20 @@ p {
 }
 
 /*---Pensamos en grande---*/
+
 .en-grande {
     color: white
 }
+
+
+/*---Comunidad---*/
+
+.comunidad h5 {
+    color: black;
+}
+
+
+
 
 .en-grande .parallax-background {
     height:480px;
@@ -331,8 +369,6 @@ p {
     width: 100%;
 }
 
-
-
 /*---Hacen---*/
 
 .hacen img {
@@ -365,6 +401,8 @@ p {
 .hacen h5 {
     font-size: 24px;
 }
+
+/*---Necesita---*/
 
 .cards-necesita {
     padding-bottom: 80px;
@@ -787,7 +825,7 @@ footer a {
 /*----1200----*/
 @media (max-width: 1200px){
     .navbar li {
-        padding: 10px;
+        padding: 0px 10px;
         font-size: 14px;
         font-weight: bold;
     }
