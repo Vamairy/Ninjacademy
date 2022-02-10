@@ -5,6 +5,10 @@
 
 /* ----Generales----*/
 
+.video-test {
+    height: 1000px;
+}
+
 h1 {
     font-family: "Lilita One", cursive;
     text-transform: uppercase;
@@ -186,7 +190,8 @@ p {
     color: white;
     background-image: url(../images/nav-background-link.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     font-family: "Lilita One", cursive;
     text-transform: uppercase;
     opacity: 10;
@@ -212,6 +217,12 @@ p {
 
 /* ----Somos Ninjas----*/
 
+.home-somos-ninjas {
+    margin-top: 50px;
+    /* background-color: #0C0B24; */
+    height: 90vh;
+}
+
 .home-somos-ninjas h2 {
     display: none;
 }
@@ -220,19 +231,25 @@ p {
     background-image: url(../images/home-somos-background-left.jpeg);
     background-repeat: no-repeat;
     background-position: right;
-    height:604px;
+    background-size: cover;
 }
 
 .somos-ninjas-left img{
-    padding: 160px 40px;
+    padding: 20%;
+    height: 90vh;
 }
 
 .somos-ninjas-right {
-    height:604px;
     background-image: url(../images/home-somos-background-right.jpeg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
+    height: 90vh;
+}
+
+.somos-ninjas-right h2 {
+    display: none;
+    padding: 200px;;
 }
 
 
@@ -349,6 +366,7 @@ p {
 .detiene .parallax-background img {
     width: 520px;
     padding: 20px 0px 0px 10px;
+    text-align:center;
 }
 
 .detiene .parallax-background h4 {
@@ -357,7 +375,6 @@ p {
     text-align:center;
     text-shadow: 2px 0px 15px #0000005f;
 }
-
 
 .detiene .separador {
     margin-top:-90px;
@@ -525,7 +542,7 @@ p {
     background-image: url(../images/queremos-background-xxl.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     margin-top: -150px;
 }
@@ -576,10 +593,9 @@ p {
 }
 
 
-/*---Footer---*/.
+/*---Footer---*/
 
 footer {
-    margin: 100px;
     background-color: #5D5FF0;
 }
 
@@ -809,6 +825,20 @@ footer a {
 
 /*MEDIA QUERIES*/
 
+@media (min-width: 1401px) {
+    .chica-enmedio {
+        display: none;
+    }
+
+    .detiene .parallax-background img {
+        width: 380px;
+        padding: 50px 10px 0px 10px;
+        text-align:center;
+        position: relative;
+    }
+    
+}
+
 /*----1400----*/
 @media (max-width: 1400px) {
     .queremos {
@@ -816,9 +846,20 @@ footer a {
         background-image: url(../images/queremos-background-xl-1.jpeg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-attachment: fixed;
         margin-top: -150px;
+    }
+
+    .detiene .parallax-background img {
+        width: 380px;
+        padding: 50px 10px 0px 10px;
+        text-align:center;
+        position: relative;
+    }
+
+    .chica-enmedio {
+        display: none;
     }
 }
 
@@ -854,7 +895,7 @@ footer a {
         background-image: url(../images/queremos-background-xl.jpeg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-attachment: fixed;
         margin-top: -150px;
     }
@@ -886,6 +927,17 @@ footer a {
         line-height: 120%;
     }
 
+    .detiene .separador {
+        margin-top: -82px;
+    }
+
+    .hide-persona {
+        display: none;
+    }
+
+    .chica-enmedio {
+        display: relative;
+    }
 }
 
 
@@ -914,7 +966,19 @@ footer a {
         font-size: 20px;
         line-height: 120%;
     }
-    
+
+    .detiene .separador {
+        margin-top: -78px;
+    }
+
+    .detiene .parallax-background {
+        height:504px;
+        margin-top:-40px;
+    }
+
+    .detiene .parallax-background {
+        margin-top:-38px;
+    }
 }
 
 
@@ -923,10 +987,6 @@ footer a {
     .nav-link{
         padding: 10px 0px;
     }
-
- /*    .item-final{
-        margin-bottom: 20px;
-    } */
     
     .autenticos .parallax-background {
         margin-top:-40px;
@@ -941,7 +1001,7 @@ footer a {
         background-image: url(../images/queremos-background-lg.jpeg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-attachment: fixed;
         margin-top: -150px;
     }
@@ -974,6 +1034,33 @@ footer a {
     .empresas .parallax-background {
         margin-top: -32px;
     }
+
+    .active {
+        color: white;
+        background-image: url(../images/nav-background-link.png);
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-position: center;
+    }
+    
+    .item-final img {
+        width: 40px;
+        padding: 0px 10px;
+    }
+
+    .item-final img {
+        width: 40px;
+        padding: 24px 10px;
+    }
+
+    .detiene .separador {
+        margin-top: -61px;
+    }
+
+    .detiene .parallax-background {
+        margin-top:-38px;
+    }
+
 }
 
 
@@ -1011,7 +1098,7 @@ footer a {
         background-image: url(../images/queremos-background-md.jpeg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-attachment: fixed;
         margin-top: -150px;
     }
@@ -1035,6 +1122,22 @@ footer a {
 
     .empresas .parallax-background {
         margin-top: -32px;
+    }
+
+    .active {
+        color: white;
+        background-image: url(../images/nav-background-link.png);
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+    }
+
+    .detiene .separador {
+        margin-top: -32px;
+    }
+
+    .detiene .parallax-background {
+        margin-top:-22px;
     }
 }
 
@@ -1080,23 +1183,27 @@ footer a {
         padding: 50px 40px 0px 10px;
     }
 
+    .home-somos-ninjas {
+        height: 50vh;
+        margin-top: 42px;
+    }
+
     .somos-ninjas-left {
         background-image: url(../images/home-somos-background-left.jpeg);
         background-repeat: no-repeat;
         background-position: right;
-        height:404px;
+        height: 50vh;
     }
     
     .somos-ninjas-left img{
-        padding: 160px 40px;
+        padding: 100px 40px;
+        width: 2000px;
+        height: 50vh;
     }
     
     .somos-ninjas-right {
-        height:404px;
-        background-image: url(../images/home-somos-background-right.jpeg);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: cover;
+        display: none;
+        
     }
 
     .hacen-cards {
@@ -1152,7 +1259,7 @@ footer a {
         background-image: url(../images/queremos-background-sm.jpeg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-attachment: fixed;
         margin-top: -150px;
     }
@@ -1204,16 +1311,37 @@ footer a {
         margin-top: -22px;
     }
 
-    /*--------*/
+    .active {
+        color: white;
+        background-image: url(../images/nav-background-link.png);
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+    }
+
+    .detiene .parallax-background {
+        margin-top:-22px;
+    }
+    
+}
+
+    /*----400----*/
 @media (max-width: 400px) {
     .queremos {
         height: 570px;
         background-image: url(../images/queremos-background-0.jpeg);
-        background-repeat: no-repeat;
+       /*  background-repeat: no-repeat; */
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-attachment: fixed;
         margin-top: -150px;
+    }
+
+    .detiene .separador {
+        margin-top: -28px;
+    }
+    .detiene .parallax-background {
+        margin-top:-15px;
     }
 }
 }

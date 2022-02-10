@@ -16,7 +16,10 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--LIGHTBOX CSS-->
-    <link href="./pluggins/Lightbox/css/lightbox.css" rel="stylesheet" />
+    <link href="./pluggins/Lightbox/css/lightbox.css" rel="stylesheet"/>
+
+    <!--WOOW CSS-->
+    <link rel="stylesheet" href="./pluggins/wow/animate.css">
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,11 +64,11 @@
                     <li class="nav-item inicio-sesion-big">
                         <div>
                             <a class="nav-link item-final" href="https://ninjacademy.com.mx/login" target="_blank">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                        <img src="./images/home-icon.png" alt="">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-auto col-lg-6">
+                                        <img src="./images/home-icon.png" alt="Iniciar sesion">
                                     </div>
-                                    <div class="col">
+                                    <div class="col-auto col-lg-6">
                                         <p>Iniciar sesión</p>
                                     </div>
                                 </div>
@@ -92,21 +95,22 @@
         </div>
     </section>
 
-    <section class="detiene">
+    <section class="detiene autenticos">
         <div class="container-fluid">
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-center text-center">
                 <div class="separador">
                     <img src="./images/detiene-separador-top.svg" alt="separador de papel">
                 </div>
                 <div class="parallax-background row justify-content-center align-items-center">
-                    <div class="col-4">
-                        <img class="img-fluid" src="./images/detiene-persona-1.png" alt="Chico">
+                    <div class="col-2 col-xl-4">
+                        <img class="img-fluid hide-persona" src="./images/detiene-persona-1.png" alt="Chico">
                     </div>
-                    <div class="col-4">
-                        <h4>Nada nos detiene</h4>
+                    <div class="col-6 col-xl-4 row justify-content-center align-items-center text-center">
+                        <img class="img-fluid chica-enmedio" src="./images/detiene-persona-2.png" alt="chica Ninja">
+                        <h4 class="wow bounceInLeft">Nada nos detiene</h4>
                     </div>
-                    <div class="col-4">
-                        <img class="img-fluid" src="./images/detiene-persona-2.png" alt="Chica">
+                    <div class="col-2 col-xl-4">
+                        <img class="img-fluid hide-persona" src="./images/detiene-persona-2.png" alt="Chica">
                     </div>
                 </div>
             </div>
@@ -129,7 +133,7 @@
             <div class="row justify-content-center hacen-cards">
                 <div class="col-xl-3 col-sm-6 text-center">
                     <div class="row justify-content-center">
-                        <img class="image-fluid" src="./images/hacen-img-1.png" alt="Viajes">
+                        <img class="image-fluid wow flipInY" data-wow-duration="0.5s" data-wow-delay="0.5s" src="./images/hacen-img-1.png" alt="Viajes">
                     </div>
                     <div class="row align-items-center justify-content-center">
                         <h5>Viaje a Perú</h5>
@@ -139,7 +143,7 @@
 
                 <div class="col-xl-3 col-sm-6 text-center justify-content-c nter">
                     <div class="row justify-content-center">
-                        <img class="image-fluid" src="./images/hacen-img-2.png" alt="Concursos">
+                        <img class="image-fluid wow flipInY" data-wow-duration="0.5s" data-wow-delay="0.5s" src="./images/hacen-img-2.png" alt="Concursos">
                     </div>
                     <div class="row align-items-center justify-content-center">
                         <h5>Concurso Ingenius para equipos</h5>
@@ -149,7 +153,7 @@
 
                 <div class="col-xl-3 col-sm-6 text-center justify-content-center">
                     <div class="row justify-content-center">
-                        <img class="image-fluid" src="./images/hacen-img-3.png" alt="Visitas">
+                        <img class="image-fluid wow flipInY" data-wow-duration="0.5s" data-wow-delay="0.5s" src="./images/hacen-img-3.png" alt="Visitas">
                     </div>
                     <div class="row align-items-center justify-content-center">
                         <h5>Visita a Ford</h5>
@@ -159,7 +163,7 @@
 
                 <div class="col-xl-3 col-sm-6 text-center justify-content-center">
                     <div class="row justify-content-center">
-                        <img class="image-fluid" src="./images/hacen-img-4.png" alt="Entrevistas">
+                        <img class="image-fluid wow flipInY" data-wow-duration="0.5s" data-wow-delay="0.5s" src="./images/hacen-img-4.png" alt="Entrevistas">
                     </div>
                     <div class="row align-items-center justify-content-center">
                         <h5>Entrevista a Claudia Márquez</h5>
@@ -286,12 +290,16 @@
     <!--LIGHTBOX JS-->
     <script src="./pluggins/Lightbox/js/lightbox.js"></script>
 
-
-<!--BOOTSTRAP JS-->
+    <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
+    <!--WOW JS-->
+    <script src="./pluggins/wow/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 </html>

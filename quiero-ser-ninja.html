@@ -16,7 +16,10 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--LIGHTBOX CSS-->
-    <link href="./pluggins/Lightbox/css/lightbox.css" rel="stylesheet" />
+    <link href="./pluggins/Lightbox/css/lightbox.css" rel="stylesheet"/>
+
+    <!--WOOW CSS-->
+    <link rel="stylesheet" href="./pluggins/wow/animate.css">
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,11 +64,11 @@
                     <li class="nav-item inicio-sesion-big">
                         <div>
                             <a class="nav-link item-final" href="https://ninjacademy.com.mx/login" target="_blank">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                        <img src="./images/home-icon.png" alt="">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-auto col-lg-6">
+                                        <img src="./images/home-icon.png" alt="Iniciar sesion">
                                     </div>
-                                    <div class="col">
+                                    <div class="col-auto col-lg-6">
                                         <p>Iniciar sesión</p>
                                     </div>
                                 </div>
@@ -87,7 +90,7 @@
             </div>
             <div class="row justify-content-center back-purple">
                 <div class="col-12 col-sm-6 col-md-8">
-                    <img class="img-fluid pase-ninja-desktop" src="./images/pases-ninja.png" alt="pase ninja">
+                    <img class="img-fluid pase-ninja-desktop wow pulse" data-wow-duration="1s" data-wow-delay="1s" src="./images/pases-ninja.png" alt="pase ninja">
                     <img class="img-fluid pase-ninja-movil" src="./images/pases-ninja-576.png" alt="pase ninja">
                 </div>
             </div>
@@ -118,7 +121,7 @@
                     <img src="./images/grande-separador-top-1.svg" alt="separador de papel">
                 </div>
                 <div class="parallax-background row justify-content-center align-items-center">
-                    <h4>Pensamos en grande</h4>
+                    <h4 class="wow bounceInLeft">Pensamos en grande</h4>
                 </div>
             </div>
             <div class="separador-bottom row align-items-center">
@@ -295,11 +298,16 @@
     <script src="./pluggins/Lightbox/js/lightbox.js"></script>
 
 
-<!--BOOTSTRAP JS-->
+    <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
+    <!--WOW JS-->
+    <script src="./pluggins/wow/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 </html>

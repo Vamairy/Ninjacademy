@@ -16,7 +16,10 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--LIGHTBOX CSS-->
-    <link href="./pluggins/Lightbox/css/lightbox.css" rel="stylesheet" />
+    <link href="./pluggins/Lightbox/css/lightbox.css" rel="stylesheet"/>
+
+    <!--WOOW CSS-->
+    <link rel="stylesheet" href="./pluggins/wow/animate.css">
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +36,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark text-center justify-content-center">
 
         <div class="container">
-            <a class="navbar-brand col-1 col-lg-1" href="./index.html">
+            <a class="navbar-brand col-2 col-lg-1" href="./index.html">
                 <img src="./images/logo-animated.svg" class="img-fluid logo-principal" alt="Logo">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu02">
@@ -60,11 +63,11 @@
                     <li class="nav-item inicio-sesion-big">
                         <div>
                             <a class="nav-link item-final" href="https://ninjacademy.com.mx/login" target="_blank">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                        <img src="./images/home-icon.png" alt="">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-auto col-lg-6">
+                                        <img src="./images/home-icon.png" alt="Iniciar sesion">
                                     </div>
-                                    <div class="col">
+                                    <div class="col-auto col-lg-6">
                                         <p>Iniciar sesión</p>
                                     </div>
                                 </div>
@@ -78,16 +81,17 @@
 
     <section class="home-somos-ninjas">
         <div class="container-fluid">
-            <div class="row">
-                <div class="somos-ninjas-left col-5">
-                    <img src="./images/home-somos-ninjas.svg" class="img-fluid align-items-center" alt="Somos Ninjas">
+            <div class="row justify-content-center align-items-center">
+                <div class="somos-ninjas-left col-12 col-md-5">
+                    <img src="./images/home-somos-ninjas.svg" class="img-fluid wow tada" data-wow-duration="1s" data-wow-delay="1s" alt="Somos Ninjas">
                 </div>
-                <div class="somos-ninjas-right col-7">
+                <div class="somos-ninjas-right col-0 col-md-7">
                     <h2>Hola</h2>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="autenticos">
         <div class="container-fluid">
             <div class="row align-items-center">
@@ -96,7 +100,7 @@
                 </div>
                 <div class="parallax-background row justify-content-center align-items-center">
                     <img class="img-fluid" src="./images/queremos-img-persona.png" alt="chica Ninja">
-                    <h4>Los ninjas somos auténticos</h4>
+                    <h4 class="wow bounceInLeft">Los ninjas somos auténticos</h4>
                 </div>
             </div>
             <div class="row align-items-center">
@@ -119,7 +123,7 @@
                     <div class="row justify-content-center">
                         <img class="image-fluid" src="./images/hacen-img-1.png" alt="viajes">
                     </div>
-                    <div class="hacen-card row align-items-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="col-10">
                             <h5>Aprenden de los expertos de las empresas más reconocidas</h5>
                         </div>
@@ -127,7 +131,7 @@
                 </div>
 
                 <div class="col-xl-3 col-sm-6 col-10 text-center justify-content-center">
-                    <div class="hacen-card row align-items-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="col-10">
                             <h5>asisten a eventos, fiestas... ¡Y viajes!</h5>
                         </div>
@@ -141,7 +145,7 @@
                     <div class="row justify-content-center">
                         <img class="image-fluid" src="./images/hacen-img-3.png" alt="amigos">
                     </div>
-                    <div class="hacen-card row align-items-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="col-10">
                             <h5>hacen amigos de otras carreras, universidades y países</h5>
                         </div>
@@ -149,7 +153,7 @@
                 </div>
 
                 <div class="col-xl-3 col-sm-6 col-10  text-center justify-content-center">
-                    <div class="hacen-card row align-items-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="col-10">
                             <h5>Participan en concursos y desafíos a problemas reales</h5>
                         </div>
@@ -169,7 +173,7 @@
                     <img class="separador que-queremos-separador" src="./images/queremos-separador.svg" alt="separador">
                 </div>
                 <div class="row back-darkblue justify-content-center">
-                    <div class="col-12 col-sm-12 col-md-10 text-center">
+                    <div class="col-12 col-sm-12 col-md-12 text-center">
                         <div class="row justify-content-center back-darkblue">
                             <div class="col-10">
                                 <h2>¿Qué queremos para los Ninjas?</h2>
@@ -200,7 +204,7 @@
             <div class="row justify-content-center text-center back-purple">
                 <h2>Mindset Ninja</h2>
                 <div class="col-11 col-sm-8">
-                    <img src="./images/mindset-mundo.png" alt="mundo">
+                    <img class="wow tada" data-wow-delay="1s" src="./images/mindset-mundo.png" alt="mundo">
                     <h4> Los ninjas  no nos preguntamos si vamos a cambiar el mundo, nos preguntamos cómo vamos a cambiarlo</h4>
                 </div>
             </div>
@@ -223,17 +227,17 @@
                     <div class="row justify-content-center">
                         <img class="image-fluid" src="./images/comunidad-foto-1.png" alt="viajes">
                     </div>
-                    <div class="hacen-card row align-items-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="col-10">
-                            <h5>Pertenecer a los Ninjas me abrió las puertas a todo tipo de oportunidades, al mundo.</h5>
+                            <h5>"Pertenecer a los Ninjas me abrió las puertas a todo tipo de oportunidades, al mundo"</h5>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xl-3 col-sm-6 col-10 text-center justify-content-center">
-                    <div class="hacen-card row align-items-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="col-10">
-                            <h5>Los Ninjas te invitan a ser único, atraverte y hacer cosas de las que no sabes que eres capaz.</h5>
+                            <h5>"Los Ninjas te invitan a ser único, atraverte y hacer cosas de las que no sabes que eres capaz"</h5>
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -245,17 +249,17 @@
                     <div class="row justify-content-center">
                         <img class="image-fluid" src="./images/comunidad-foto-3.png" alt="amigos">
                     </div>
-                    <div class="hacen-card row align-items-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="col-10">
-                            <h5>Gracias al programa me siento otra persona, he hecho amigos de muchas universidades. </h5>
+                            <h5>"Gracias al programa me siento otra persona, he hecho amigos de muchas universidades"</h5>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xl-3 col-sm-6 col-10  text-center justify-content-center">
-                    <div class="hacen-card row align-items-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="col-10">
-                            <h5>Desde que entré al programa puedo explotar mis capacidades al máximo.</h5>
+                            <h5>"Desde que entré al programa puedo explotar mis capacidades al máximo"</h5>
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -279,7 +283,7 @@
             <div class="row justify-content-center back-purple">
                 <div class="row justify-content-center back-purple">
                     <div class="col-12 col-sm-6 col-md-8">
-                        <img class="img-fluid pase-ninja-desktop" src="./images/pases-ninja.png" alt="pase ninja">
+                        <img class="img-fluid pase-ninja-desktop wow pulse" data-wow-duration="1s" data-wow-delay="1s" src="./images/pases-ninja.png" alt="pase ninja">
                         <img class="img-fluid pase-ninja-movil" src="./images/pases-ninja-576.png" alt="pase ninja">
                     </div>
                 </div>
@@ -375,10 +379,19 @@
     <!--JQUERY CDN-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-<!--BOOTSTRAP JS-->
+    <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+
+    <!--VIDE-->
+    <script src="./pluggins/Vide/jquery.vide.js"></script>
+
+    <!--WOW JS-->
+    <script src="./pluggins/wow/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 
 </body>
