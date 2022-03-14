@@ -15,6 +15,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!--owlcarousel-->
+    <link rel="stylesheet" href="./pluggins/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./pluggins/owlcarousel/assets/owl.theme.default.css">
+
     <!--LIGHTBOX CSS-->
     <link href="./pluggins/Lightbox/css/lightbox.css" rel="stylesheet"/>
 
@@ -24,8 +28,19 @@
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lilita+One&display=swap"
+        rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9N64LYCH60"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'G-9N64LYCH60');
+    </script>
+    
     <!--ESTILOS CSS-->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -214,7 +229,82 @@
         </div>
     </section>
 
-    
+    <section class="logos-home">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <h2>Estas empresas ya nos han colaborado</h2>
+            </div>
+            <div class="row">
+                <div>
+                    <div class="col-12">
+                        <div class="owl-carousel owl-theme">
+                            <div>
+                                <img src="../images/logo-ABB.svg" alt="ABB" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Hyundai.svg" alt="Hyundai">
+                            </div>
+                            <div>
+                                <img src="./images/logo-SIEMENS.svg" alt="Siemens">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Mercado.svg" alt="Mercado Libre">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Arkangeles.svg" alt="Arkangeles">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Casai.svg" alt="Casai">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Palacio.svg" alt="Palacio de Hierro">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Oracle.svg" alt="Oracle">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Subway.svg" alt="Subway">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Herdez.svg" alt="Herdez">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Prudential.svg" alt="Prudential Seguros">
+                            </div>
+                            <div>
+                                <img src="./images/logo-latam.svg" alt="LATAM Airlines"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-gruposalinas.svg" alt="Grupo Salinas"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-Banco.svg" alt="Banco Azteca"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-Michelin.svg" alt="Michelin"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-smart.svg" alt="Smart Fit"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-Nutrisa.svg" alt="Nutrisa"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-LEGO.svg" alt="LEGO"></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row separador-logos-home">
+                    <div class="row">
+                        <img src="./images/separador-logos-home.svg" alt="">
+                    </div>
+                </div>
+        </div>
+   </section>
+   
+
+
     <section class="hacen comunidad back-darkblue">
         <div class="container hacen-container">
             <div class="row">
@@ -388,12 +478,36 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
+    
+    <!--OWL CAROUSEL JS-->
+    <script src="./pluggins/owlcarousel/assets/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            dots: false,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            responsive: {
+                0: {
+                    items: 4,
+                },
+                600: {
+                    items: 6,
+                },
+                1000: {
+                    items: 7,
+                }
+            }
+        })
+    </script>
+
     <!--WOW JS-->
     <script src="./pluggins/wow/wow.js"></script>
     <script>
         new WOW().init();
     </script>
-
 
 </body>
 </html>

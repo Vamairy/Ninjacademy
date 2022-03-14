@@ -182,7 +182,7 @@ p {
     color: white;
 }
 
-.active {
+nav .active {
     color: white;
     background-image: url(../images/nav-background-link.png);
     background-repeat: no-repeat;
@@ -301,6 +301,18 @@ p {
 .comunidad h5 {
     color: black;
 }
+
+.logos-home img {
+    padding: 20px;
+    margin: 10px 0px 40px 0px;
+}
+
+.separador-logos-home img {
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
 
 .en-grande .parallax-background {
     height:480px;
@@ -734,6 +746,22 @@ footer a {
     color: white;
 }
 
+.container-logos-empresas {
+    padding: 0px 0px 100px 00px;
+}
+
+.logos-empresas img{
+    width: 150px;
+    padding: 0px 10px;
+}
+
+.logos-empresas img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: ease;
+}
+
 .empresas h2 {
     padding: 170px 0px 40px 0px;
 }
@@ -801,6 +829,7 @@ footer a {
 
 
 /*---colaborar---*/
+
 .colaborar-caracteristicas h5 {
     display: none;
 }
@@ -1056,7 +1085,7 @@ footer a {
         margin-top: -32px;
     }
 
-    .active {
+    nav .active {
         color: white;
         background-image: url(../images/nav-background-link.png);
         background-repeat: no-repeat;
@@ -1081,16 +1110,12 @@ footer a {
     .detiene .parallax-background {
         margin-top:-38px;
     }
+
 }
 
 
 /*----768----*/
 @media (max-width: 768px){
-
-    .somos-ninjas-right {
-        display: none;
-        height: 0px;
-    }
 
     .pase-ninja-quiero, .ya-soy, .empresas {
         margin-top: 56px;
@@ -1148,7 +1173,7 @@ footer a {
         margin-top: -32px;
     }
 
-    .active {
+    nav .active {
         color: white;
         background-image: url(../images/nav-background-link.png);
         background-repeat: no-repeat;
@@ -1223,6 +1248,11 @@ footer a {
         padding: 100px 40px;
         width: 2000px;
         height: 50vh;
+    }
+    
+    .somos-ninjas-right {
+        display: none;
+        
     }
 
     .hacen-cards {
@@ -1330,7 +1360,7 @@ footer a {
         margin-top: -22px;
     }
 
-    .active {
+    nav .active {
         color: white;
         background-image: url(../images/nav-background-link.png);
         background-repeat: no-repeat;
@@ -1340,11 +1370,6 @@ footer a {
 
     .detiene .parallax-background {
         margin-top:-22px;
-    }
-    
-    .somos-ninjas-right {
-        display: none;
-        height: 0px;
     }
     
 }
