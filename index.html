@@ -1,13 +1,514 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description"content="Educación no convencional de Ninjas, para Ninjas. ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educación no convencional de Ninjas, para Ninjas. ">
     <title>Ninja Academy</title>
+
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon.png">
+
+    <!--BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--owlcarousel-->
+    <link rel="stylesheet" href="./pluggins/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./pluggins/owlcarousel/assets/owl.theme.default.css">
+
+    <!--LIGHTBOX CSS-->
+    <link href="./pluggins/Lightbox/css/lightbox.css" rel="stylesheet"/>
+
+    <!--WOW CSS-->
+    <link rel="stylesheet" href="./pluggins/wow/animate.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lilita+One&display=swap"
+        rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9N64LYCH60"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9N64LYCH60');
+    </script>
+    
+    <!--ESTILOS CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
+<!--NAVBAR-->
+    <!-- MÓDULO GENERAL NAVBAR BOOTSTRAP 5 -->
+    <nav class="navbar navbar-expand-lg navbar-dark text-center justify-content-center">
+
+        <div class="container">
+            <a class="navbar-brand col-2 col-lg-1" href="./index.html">
+                <img src="./images/logo-animated.svg" class="img-fluid logo-principal" alt="Logo">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- CONTENEDOR LISTA DE VÍNCULOS -->
+            <div class="navbar-collapse collapse" id="menu02">
+                <ul class="navbar-nav text-center justify-content-center col-10 col-lg-10 col-sm-12 col-12">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quiero-ser-ninja.html">Quiero ser Ninja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./novedades.html">Novedades Ninja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./empresas.html">Para empresas</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-lg-2 nav flex-column justify-content-end inicio-sesion">
+                    <li class="nav-item inicio-sesion-big">
+                        <div>
+                            <a class="nav-link item-final" href="https://ninjacademy.com.mx/login" target="_blank">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-auto col-lg-6">
+                                        <img src="./images/home-icon.png" alt="Iniciar sesion">
+                                    </div>
+                                    <div class="col-auto col-lg-6">
+                                        <p>Iniciar sesión</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home-somos-ninjas">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="somos-ninjas-left col-12 col-md-5">
+                    <img src="./images/home-somos-ninjas.svg" class="img-fluid wow tada" data-wow-duration="1s" data-wow-delay="1s" alt="Somos Ninjas">
+                </div>
+                <div class="somos-ninjas-right col-0 col-md-7">
+                    <h2>Hola</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="autenticos">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="separador">
+                    <img src="./images/autenticos-separador-top.svg" alt="separador de papel">
+                </div>
+                <div class="parallax-background row justify-content-center align-items-center">
+                    <img class="img-fluid" src="./images/queremos-img-persona.png" alt="chica Ninja">
+                    <h4 class="wow bounceInLeft">Los ninjas somos auténticos</h4>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="separador">
+                    <img src="./images/parallax-separador-bottom.svg" alt="separador de papel">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hacen">
+        <div class="container hacen-container">
+            <div class="row">
+                <div class="col-12 text-center ">
+                    <h2>¿Qué hacen los ninjas?</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center hacen-cards">
+                <div class="col-xl-3 col-sm-6 col-10  text-center">
+                    <div class="row justify-content-center">
+                        <img class="image-fluid" src="https://i.ibb.co/k4QLjgy/hacen-gif1.gif" alt="viajes">
+                    </div>
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="col-10">
+                            <h5>Aprenden de los expertos de las empresas más reconocidas</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-10 text-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="col-10">
+                            <h5>asisten a eventos, fiestas... ¡Y viajes!</h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <img class="image-fluid" src="https://i.ibb.co/VHZ1MKH/hacen-gif2.gif" alt="expertos">
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-10 text-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <img class="image-fluid" src="https://i.ibb.co/MndQtbx/hacen-gif3.gif" alt="amigos">
+                    </div>
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="col-10">
+                            <h5>hacen amigos de otras carreras, universidades y países</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-10  text-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="col-10">
+                            <h5>Participan en concursos y desafíos a problemas reales</h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <img class="image-fluid" src="https://i.ibb.co/GQ09dnv/hacen-gif4.gif" alt="visitas">
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </section>
     
+    <section class="que-queremos-container">
+        <div class="container-fluid">
+            <div class="back-darkblue">
+                <div class="row back-darkblue">
+                    <img class="separador que-queremos-separador" src="./images/queremos-separador.svg" alt="separador">
+                </div>
+                <div class="row back-darkblue justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-12 text-center">
+                        <div class="row justify-content-center back-darkblue">
+                            <div class="col-10">
+                                <h2>¿Qué queremos para los Ninjas?</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row separador">
+                <img src="./images/queremos-separador-bottom.svg" alt="separador">
+            </div>
+        </div>
+    </section>
+
+    <section class="queremos">
+        <div class="container-fluid">
+            <div class="row">
+                <h2>hola</h2>
+            </div>
+        </div>
+    </section>
+    
+    <section class="mindset">
+        <div class="container-fluid mindset">
+            <div class="row mindset-separador justify-content-center">
+                <img src="./images/mindset-separador-top.png" alt="separador">
+            </div>
+            <div class="row justify-content-center text-center back-purple">
+                <h2>Mindset Ninja</h2>
+                <div class="col-11 col-sm-8">
+                    <img class="wow tada" data-wow-delay="1s" src="./images/mindset-mundo.png" alt="mundo">
+                    <h4> Los ninjas  no nos preguntamos si vamos a cambiar el mundo, nos preguntamos cómo vamos a cambiarlo</h4>
+                </div>
+            </div>
+            <div >
+                <img class="mindset-separador" src="./images/mindset-separador-bottom.png" alt="separador de papel">
+            </div>
+        </div>
+    </section>
+
+    <section class="logos-home">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <h2>Estas empresas ya nos han colaborado</h2>
+            </div>
+            <div class="row">
+                <div>
+                    <div class="col-12">
+                        <div class="owl-carousel owl-theme">
+                            <div>
+                                <img src="../images/logo-ABB.svg" alt="ABB" class="img-fluid">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Hyundai.svg" alt="Hyundai">
+                            </div>
+                            <div>
+                                <img src="./images/logo-SIEMENS.svg" alt="Siemens">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Mercado.svg" alt="Mercado Libre">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Arkangeles.svg" alt="Arkangeles">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Casai.svg" alt="Casai">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Palacio.svg" alt="Palacio de Hierro">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Oracle.svg" alt="Oracle">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Subway.svg" alt="Subway">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Herdez.svg" alt="Herdez">
+                            </div>
+                            <div>
+                                <img src="./images/logo-Prudential.svg" alt="Prudential Seguros">
+                            </div>
+                            <div>
+                                <img src="./images/logo-latam.svg" alt="LATAM Airlines"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-gruposalinas.svg" alt="Grupo Salinas"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-Banco.svg" alt="Banco Azteca"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-Michelin.svg" alt="Michelin"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-smart.svg" alt="Smart Fit"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-Nutrisa.svg" alt="Nutrisa"></li>
+                            </div>
+                            <div>
+                                <img src="./images/logo-LEGO.svg" alt="LEGO"></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row separador-logos-home">
+                    <div class="row">
+                        <img src="./images/separador-logos-home.svg" alt="">
+                    </div>
+                </div>
+        </div>
+   </section>
+   
+
+
+    <section class="hacen comunidad back-darkblue">
+        <div class="container hacen-container">
+            <div class="row">
+                <div class="col-12 text-center ">
+                    <h2>Comunidad Ninja</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center hacen-cards">
+                <div class="col-xl-3 col-sm-6 col-10  text-center">
+                    <div class="row justify-content-center">
+                        <img class="image-fluid" src="./images/comunidad-foto-1.png" alt="viajes">
+                    </div>
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="col-10">
+                            <h5>"Pertenecer a los Ninjas me abrió las puertas a todo tipo de oportunidades, al mundo"</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-10 text-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="col-10">
+                            <h5>"Los Ninjas te invitan a ser único, atraverte y hacer cosas de las que no sabes que eres capaz"</h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <img class="image-fluid" src="./images/comunidad-foto-2.png" alt="expertos">
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-10 text-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <img class="image-fluid" src="./images/comunidad-foto-3.png" alt="amigos">
+                    </div>
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="col-10">
+                            <h5>"Gracias al programa me siento otra persona, he hecho amigos de muchas universidades"</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-10  text-center justify-content-center">
+                    <div class="hacen-card row align-items-center justify-content-center wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="col-10">
+                            <h5>"Desde que entré al programa puedo explotar mis capacidades al máximo"</h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <img class="image-fluid" src="./images/comunidad-foto-4.png" alt="visitas">
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </section>
+
+    <section class="listo-para">
+        <div class="pase-ninja-separador container-fluid text-center">
+            <div class="row">
+                <img src="./images/pase-home-separador-top.svg" alt="separador de papel">
+            </div>
+            <div class="row back-purple justify-content-center">
+                <div class="col-11">
+                    <h2>¿Listo para ser Ninja?</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center back-purple">
+                <div class="row justify-content-center back-purple">
+                    <div class="col-12 col-sm-6 col-md-8">
+                        <img class="img-fluid pase-ninja-desktop wow pulse" data-wow-duration="1s" data-wow-delay="1s" src="./images/pases-ninja.png" alt="pase ninja">
+                        <img class="img-fluid pase-ninja-movil" src="./images/pases-ninja-576.png" alt="pase ninja">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center back-purple">
+                <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-8">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <h4>¿Ya tienes un pase?</h4>
+                        </div>
+                        <div class="call-to-action row justify-content-center">
+                            <div class="col col-md-6">
+                                <form action="https://ninjacademy.com.mx/login" target="_blank">
+                                    <button class="button-secundario-light">¡Ya tengo!</button>
+                                </form>
+                            </div>
+                            <div class="col col-md-6">
+                                <form action="https://ninjacademy.com.mx/signup" target="_blank">
+                                    <button class="button-secundario-dark">Aún no, Obtenerlo</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid text-center justify-content-center">
+            <div class="row back-darkblue justify-content-center footer-barra-arriba align-items-center">
+                <img src="./images/logo.svg" alt="Logo">
+                <div class="col-10 col-md-8 col-lg-6">
+                    <div class="row justify-content-center footer-links align-items-center">
+                        <div class="col">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-8 col-sm-12">
+                                    <a href="https://www.facebook.com/ninjacademymx" target="_blank">
+                                        <img class="iconos-redes" src="./images/icon-redes-facebook.svg" alt="Facebook logo"> Facebook
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-8 col-sm-12">
+                                    <a href="https://www.linkedin.com/company/myninjacademy/" target="_blank">
+                                        <img class="iconos-redes" src="./images/icon-redes-linkedin.svg" alt="Linkedin logo"> LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-8 col-sm-12">
+                                    <a href="https://www.instagram.com/ninjacademymx/" target="_blank">
+                                        <img class="iconos-redes" src="./images/icon-redes-instagram.svg" alt="Instagram logo"> Instagram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row back-purple footer-barra-abajo align-items-center justify-content-center">
+                <div class="col-8 col-sm-10">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-sm col-md footer-link-menu">
+                            <a href="./index.html">¿Quienes somos?</a>
+                        </div>
+                        <div class="col-12 col-sm col-md footer-link-menu">
+                            <a href="./quiero-ser-ninja.html">¡Quiero ser Ninja!</a>
+                        </div>
+                        <div class="col-12 col-sm col-md footer-link-menu">
+                            <a href="#">© 2021, <b>Ninja Academy</b></a>
+                        </div>
+                        <div class="col-12 col-sm col-md footer-link-menu">
+                            <a href="./novedades.html">Novedades Ninja</a>
+                        </div>
+                        <div class="col-12 col-sm col-md footer-link-menu">
+                            <a href="./empresas.html">Para empresas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+<!--JAVASCRIPT-->
+    <!--LIGHTBOX JS-->
+    <script src="./pluggins/Lightbox/js/lightbox.js"></script>
+
+    <!--JQUERY CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+    
+    <!--OWL CAROUSEL JS-->
+    <script src="./pluggins/owlcarousel/assets/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            dots: false,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            responsive: {
+                0: {
+                    items: 4,
+                },
+                600: {
+                    items: 6,
+                },
+                1000: {
+                    items: 7,
+                }
+            }
+        })
+    </script>
+
+    <!--WOW JS-->
+    <script src="./pluggins/wow/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 </html>
 

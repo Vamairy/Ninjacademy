@@ -1,4 +1,1395 @@
 * {
     padding: 0;
     margin: 0;
-} 
+}
+
+/* ----Generales----*/
+
+h1 {
+    font-family: "Lilita One", cursive;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Lilita One", cursive;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 48px;
+    padding: 100px 0px 50px 0px;
+}
+
+h3 {
+    font-family: "Lilita One", cursive;
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "Lilita One", cursive;
+    font-weight: 300;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+h5 {
+    font-family: "Lilita One", cursive;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+p {
+    font-family: "DM Sans", sans-serif;
+    color: #727272;
+}
+
+.cursor-zoom {
+    cursor: zoom-in;
+}
+
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.lb-data .lb-caption {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 8px;
+    font-family: "DM Sans", sans-serif !important;
+    color: white;
+}
+
+
+/*Background colors*/
+.back-darkblue {
+    background-color: #0C0B24;
+    color: white;
+}
+
+.back-purple {
+    background-color: #5D5FF0;
+    color: white;
+}
+
+.back-green {
+    background-color: #1B4E65;
+    color: white;
+}
+
+/*Buttons*/
+.button-desktop-principal {
+    background-color: #5D5FF0;
+    padding: 10px;
+    margin: 20px 10px;
+    width: 220px;
+    color: white;
+    font-family: "Lilita One", cursive;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.button-secundario-light {
+    background-color: white;
+    padding: 10px;
+    margin: 20px 10px;
+    width: 220px;
+    color: black;
+    font-family: "Lilita One", cursive;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.button-secundario-dark {
+    background-color: #0C0B24;
+    padding: 10px;
+    margin: 20px 10px;
+    width: 220px;
+    color: white;
+    font-family: "Lilita One", cursive;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border-style: none;
+}
+
+.button-desktop-principal:hover {
+    width: 228px;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    color: rgba(255, 255, 255, 0.700);
+}
+
+.button-secundario-light:hover {
+    width: 228px;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    color: rgba(0, 0, 0, 0.700);
+}
+
+.button-secundario-dark:hover  {
+    width: 228px;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    color: rgba(255, 255, 255, 0.800);
+}
+
+
+/* ----Nav----*/
+
+.navbar {
+    background-color: black;
+    padding: 0px 80px;
+    font-family: "DM Sans", sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.navbar img {
+    width: 80px;
+    padding: 10px 0px;
+}
+
+.navbar li {
+    padding: 0px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar-dark {
+    color: white;
+}
+
+.nav-link {
+    padding: 8px 0px;
+}
+
+.inicio-sesion li {
+    padding: 0px 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+nav .active {
+    color: white;
+    background-image: url(../images/nav-background-link.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-family: "Lilita One", cursive;
+    text-transform: uppercase;
+    opacity: 10;
+}
+
+.item-final img {
+    width: 40px;
+}
+
+.item-final:hover {
+    opacity: 0.5;
+}
+
+
+.item-final p {
+    font-family: "Lilita One", cursive;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: left;
+    line-height: 18px;
+    margin-bottom: 0px;
+}
+
+/* ----Somos Ninjas----*/
+
+.home-somos-ninjas {
+    margin-top: 50px;
+    /* background-color: #0C0B24; */
+    height: 90vh;
+    cursor: url("../images/cursor-flecha.png"), auto;
+}
+
+.home-somos-ninjas h2 {
+    display: none;
+}
+
+.somos-ninjas-left {
+    background-image: url(../images/home-somos-background-left.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.somos-ninjas-left img{
+    padding: 20%;
+    height: 90vh;
+}
+
+.somos-ninjas-right {
+    background-image: url(../images/home-somos-background-right.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 90vh;
+}
+
+.somos-ninjas-right h2 {
+    display: none;
+    padding: 200px;;
+}
+
+/*---Ninjas Autenticos---*/
+.autenticos {
+    color: white
+}
+
+.autenticos .parallax-background {
+    height:504px;
+    background-image: url(../images/autenticos-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:-60px;
+    position: relative;
+    margin-left: 0px;
+}
+
+.autenticos .parallax-background img {
+    width: 480px;
+    padding: 50px 10px 0px 10px;
+    text-align:center;
+    position: absolute;
+}
+
+.autenticos .parallax-background h4 {
+    z-index: 1;
+    text-align:center;
+    text-shadow: 2px 0px 15px #0000005f;
+}
+
+
+.autenticos .separador {
+    margin-top:-60px;
+    z-index: 1;
+    padding: 0px;
+}
+
+.autenticos .separador img {
+    width: 100%;
+}
+
+/*---Pensamos en grande---*/
+
+.en-grande {
+    color: white
+}
+
+/*---Comunidad---*/
+
+.comunidad h5 {
+    color: black;
+}
+
+.logos-home img {
+    padding: 20px;
+    margin: 10px 0px 40px 0px;
+}
+
+.separador-logos-home img {
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+.en-grande .parallax-background {
+    height:480px;
+    background-image: url(../images/en-grande-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -45px;
+    position: relative;
+    margin-left: 0px;
+}
+
+.en-grande .parallax-background img {
+    width: 480px;
+    padding: 50px 10px 0px 10px;
+    text-align:center;
+    position: absolute;
+}
+
+.en-grande .parallax-background h4 {
+    z-index: 1;
+    text-align:center;
+    text-shadow: 2px 0px 15px #0000005f;
+}
+
+.en-grande .separador {
+    margin-top: 0px;
+    z-index: 1;
+    padding: 0px;
+}
+
+.en-grande .separador-bottom {
+    margin-top: -60px;
+}
+
+.en-grande .separador img {
+    width: 100%;
+}
+
+/*---Detiene---*/
+
+.detiene .parallax-background {
+    height:504px;
+    background-image: url(../images/detiene-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:-50px;
+    position: relative;
+    margin-left: 0px;
+}
+
+.detiene .parallax-background img {
+    width: 520px;
+    padding: 20px 0px 0px 10px;
+    text-align:center;
+}
+
+.detiene .parallax-background h4 {
+    z-index: 1;
+    color: white;
+    text-align:center;
+    text-shadow: 2px 0px 15px #0000005f;
+}
+
+.detiene .separador {
+    margin-top:-90px;
+    z-index: 1;
+    padding: 0px;
+}
+
+.detiene .separador img {
+    width: 100%;
+}
+
+/*---Hacen---*/
+
+.hacen img {
+    padding: 40px 0px;
+    width: 90%;
+}
+
+.hacen:hover {
+    cursor: url("../images/cursor-flecha.png"), auto;
+}
+
+.hacen-cards {
+    padding-bottom: 80px;
+}
+
+.hacen-card {
+    background-image: url(../images/hacen-card-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 98%;
+    height: 300px;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+.hacen-card h5 {
+    font-family: "Lilita One", cursive;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.hacen h5 {
+    font-size: 24px;
+}
+
+/*---Necesita---*/
+
+.cards-necesita {
+    padding-bottom: 80px;
+}
+
+.card-necesita {
+    background-image: url(../images/hacen-card-background.jpeg);
+    width: 98%;
+    height: 300px;
+    padding: 10px;
+    margin: 28px 0px;
+}
+
+.cards-necesita h4:hover{
+    font-size: 32px;
+}
+
+.cards-necesita img {
+    width: 100%;
+}
+
+.card-necesita-autentico {
+    background-image: url(https://i.ibb.co/QKK60P8/necesita-autentico.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-autentico:hover {
+    background-image: none;
+}
+
+.card-necesita-positivo {
+    background-image: url(https://i.ibb.co/nBTgQj0/necesita-positivo.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-positivo:hover {
+    background-image: none;
+}
+
+.card-necesita-curioso {
+    background-image: url(https://i.ibb.co/G02n98f/necesita-curioso.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-curioso:hover {
+    background-image: none;
+}
+
+.card-necesita-ganas {
+    background-image: url(https://i.ibb.co/0r9XRhD/necesita-mejorar.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-ganas:hover {
+    background-image: none;
+}
+
+.card-necesita-diversidad {
+    background-image: url(https://i.ibb.co/WGXfgWb/necesita-diversidad.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-diversidad:hover {
+    background-image: none;
+}
+
+.card-necesita-crecer {
+    background-image: url(https://i.ibb.co/T17kn8j/necesita-crecer.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-crecer:hover {
+    background-image: none;
+}
+
+.card-necesita-respetuosa {
+    background-image: url(https://i.ibb.co/q7cg2hj/necesita-respetuosa.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-respetuosa:hover {
+    background-image: none;
+}
+
+.card-necesita-atreverse {
+    background-image: url(https://i.ibb.co/98WzcWf/necesita-diferente.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-necesita-atreverse:hover {
+    background-image: none;
+}
+
+.hacen-card h4 {
+    background-color: white;
+    font-size: 14px;
+}
+
+/*---Queremos---*/
+.que-queremos-container{
+    z-index: 2;
+}
+
+.que-queremos-container .container-fluid {
+    padding: 0px !important;
+}
+
+.que-queremos-container img {
+    padding: 0px !important;
+    margin-top: -2px;
+}
+
+.que-queremos-separador {
+    padding: 0px;
+}
+
+.que-queremos-separador {
+    margin-top: -2px;
+    padding: 0px;
+    width: 100%;
+}
+
+.separador {
+    margin-top: -2px;
+    padding: 0px !important;
+    /* margin: 0px; */
+}
+
+.queremos h2 {
+    display: none;
+}
+
+.que-queremos-container h2 {
+    color: white;
+    padding-bottom: 40px;
+}
+
+.queremos {
+    height: 570px;
+    background-image: url(../images/queremos-background-xxl.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    margin-top: -150px;
+}
+
+/*---Mindset Ninja---*/
+
+.mindset {
+    padding: 0px;
+    margin-top: -120px;
+}
+
+.mindset-container h2 {
+    padding-bottom: 16px;
+}
+
+.mindset-container img {
+    padding-bottom: 32px;
+    width: 120px;
+}
+
+.mindset-separador {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+.mindset-separador img {
+    background-color: transparent;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: -5px;
+}
+
+.mindset h4 {
+    padding: 40px 0px 0px 0px;
+}
+
+.mindset-separador {
+    width: 100%;
+    margin: 0px;
+}
+
+/*---Proximamente---*/
+
+.hacen-separador-bottom{
+    width: 100%;
+    padding: 0px !important;
+}
+
+/*---Footer---*/
+
+footer {
+    background-color: #5D5FF0;
+}
+
+footer img {
+    height: 80px;
+    padding: 16px;
+}
+
+.iconos-redes {
+    width: 50px;
+}
+
+.footer-barra-abajo {
+    padding: 16px 0px 32px 0px;
+    font-size: 10px;
+}
+
+.footer-barra-arriba {
+    font-size: 14px;
+}
+
+footer a {
+    padding: 16px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-barra-arriba a:hover {
+    color: #5D5FF0;
+}
+
+.footer-barra-abajo a:hover {
+    color: black;
+}
+
+/*---Pase Ninja---*/
+
+.pase-ninja img {
+ padding: 32px;
+}
+
+.pase-ninja-movil {
+    display: none;
+}
+
+.pase-ninja-desktop{
+    padding-bottom: 16px;
+    margin: 16px;
+}
+
+.listo-para h4 {
+    padding-top: 40px;
+}
+
+.pase-ninja-quiero {
+    margin-top: 80px;
+}
+
+.call-to-action {
+    padding-bottom: 80px;
+}
+
+.pase-ninja-quiero h2 {
+    padding: 100px 0px 10px 0px;;
+}
+
+.pase-ninja-separador {
+   padding: 0px;
+}
+
+.pase-ninja-separador img {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.necesita:hover {
+    cursor: url("../images/cursor-flecha.png"), auto;
+}
+
+/*---Postea---*/
+.postea-imagenes img:hover {
+    cursor: url("../images/cursor.png"), auto;
+}
+
+.postea-imagenes {
+    padding-bottom: 32px;
+}
+ 
+.postea h5 {
+    font-size: 22px;
+    padding: 40px 0px 100px 0px;
+}
+
+.postea-imagenes img {
+    padding: 12px 12px;
+}
+
+/*---Para empresas---*/
+.empresas {
+    background-image: url(../images/empresas-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    margin-top: 72px;
+    color: white;
+}
+
+.container-logos-empresas {
+    padding: 0px 0px 100px 00px;
+}
+
+.logos-empresas img{
+    width: 150px;
+    padding: 0px 10px;
+}
+
+.logos-empresas img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: ease;
+}
+
+.empresas h2 {
+    padding: 170px 0px 40px 0px;
+}
+
+.empresas button {
+    margin: 0px 0px 300px 0px;
+}
+
+.empresas .parallax-background {
+    height:504px;
+    background-image: url(../images/empresas-separador-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top:-50px;
+    position: relative;
+    margin-left: 0px;
+}
+
+.empresas .parallax-background img {
+    width: 520px;
+    padding: 20px 0px 0px 10px;
+}
+
+.empresas .parallax-background h4 {
+    z-index: 1;
+    color: white;
+    text-align:center;
+    text-shadow: 2px 0px 15px #0000005f;
+}
+
+.empresas .separador {
+    margin-top:-80px;
+    z-index: 1;
+    padding: 0px;
+}
+
+.empresas .separador img {
+    width: 100%;
+}
+
+.empresas .parallax-background h2 {
+    display: none;
+}
+
+.empresas-card {
+    background-image: url(../images/hacen-card-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 98%;
+    padding: 40px 10px;
+    margin: 20px
+}
+
+.empresas-card img {
+    margin: 4px;
+    width: 100%;
+}
+
+.empresas-card-texto {
+    margin: 20px;
+}
+
+
+/*---colaborar---*/
+
+.colaborar-caracteristicas h5 {
+    display: none;
+}
+
+.colaborar-imagenes img:hover {
+    cursor: url("../images/cursor.png"), auto;
+}
+
+.colaborar-imagenes {
+    padding-bottom: 16px;
+}
+ 
+.colaborar h5 {
+    font-size: 22px;
+    padding: 40px 0px 16px 0px;
+}
+
+.colaborar button {
+    margin-bottom: 80px;
+}
+
+.colaborar-partners img {
+    padding: 12px 12px;
+}
+
+/*---Ya soy---*/
+.ya-soy {
+    background-image: url(../images/ya-soy-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 72px;
+    color: white;
+    padding: 0px;
+}
+
+.ya-soy img {
+    width: 80%;
+    padding: 170px 0px 40px 0px;
+}
+
+.ya-soy h4 {
+    width: 100%;
+    padding: 0px 0px 300px 0px;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    --bs-gutter-x: 0rem;
+
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 1401px) {
+    .chica-enmedio {
+        display: none;
+    }
+
+    .detiene .parallax-background img {
+        width: 380px;
+        padding: 50px 10px 0px 10px;
+        text-align:center;
+        position: relative;
+    }
+    
+}
+
+/*----1400----*/
+@media (max-width: 1400px) {
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-xl-1.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+        margin-top: -150px;
+    }
+
+    .detiene .parallax-background img {
+        width: 380px;
+        padding: 50px 10px 0px 10px;
+        text-align:center;
+        position: relative;
+    }
+
+    .chica-enmedio {
+        display: none;
+    }
+}
+
+/*----1200----*/
+@media (max-width: 1200px){
+    .navbar li {
+        padding: 0px 10px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .pase-ninja-quiero, .ya-soy, .empresas {
+        margin-top: 64px;
+    }
+
+    .navbar {
+        padding: 0px !important;
+    }
+
+    .navbar>div {
+        margin: 0px 0px !important;
+    }
+
+    .autenticos .parallax-background {
+        margin-top:-50px;
+    }
+
+    .autenticos .separador {
+        margin-top:-48px;
+    }
+
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-xl.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+        margin-top: -150px;
+    }
+
+    .en-grande .parallax-background {
+        margin-top: -50px;
+    }
+
+    .en-grande .separador {
+        margin-top: -20px;
+    }
+
+    .en-grande .separador-bottom {
+        margin-top: -24px;
+    }
+
+    .hacen-cards {
+        padding: 0px 60px 80px 60px;
+    }
+
+    .hacen-card {
+        height: 260px;
+        padding: 20px;
+        margin: 5px
+    }
+
+    .detiene .separador {
+        margin-top: -82px;
+    }
+
+    .hide-persona {
+        display: none;
+    }
+
+
+}
+
+
+/*----1024----*/
+@media (max-width: 1024px){
+
+    .pase-ninja-quiero, .ya-soy, .empresas {
+        margin-top: 64px;
+    }
+
+    .autenticos .parallax-background {
+        margin-top:-50px;
+    }
+
+    .autenticos .separador {
+        margin-top:-48px;
+    }
+
+    .hacen-card {
+        height: 240px;
+        padding: 32px;
+        margin: 5px 0px;
+    }
+
+    .detiene .separador {
+        margin-top: -78px;
+    }
+
+    .detiene .parallax-background {
+        height:504px;
+        margin-top:-40px;
+    }
+
+    .detiene .parallax-background {
+        margin-top:-38px;
+    }
+}
+
+
+/*----992----*/
+@media (max-width: 992px){
+    .nav-link{
+        padding: 10px 0px;
+    }
+    
+    .autenticos .parallax-background {
+        margin-top:-40px;
+    }
+
+    .autenticos .separador {
+        margin-top:-42px;
+    }
+
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-lg.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+        margin-top: -150px;
+    }
+
+    .en-grande .parallax-background {
+        margin-top: -40px;
+    }
+
+    .en-grande .separador {
+        margin-top: -20px;
+    }
+
+    .en-grande .separador-bottom {
+        margin-top: -24px;
+    }
+
+    .hacen-cards {
+        padding: 0px 20px 80px 20px;
+    }
+
+    .hacen-card {
+        height: 260px;
+        padding: 20px;
+    }
+
+    .empresas .separador {
+        margin-top:-26px;
+    }
+
+    .empresas .parallax-background {
+        margin-top: -32px;
+    }
+
+    nav .active {
+        color: white;
+        background-image: url(../images/nav-background-link.png);
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-position: center;
+    }
+    
+    .item-final img {
+        width: 40px;
+        padding: 0px 10px;
+    }
+
+    .item-final img {
+        width: 40px;
+        padding: 24px 10px;
+    }
+
+    .detiene .separador {
+        margin-top: -61px;
+    }
+
+    .detiene .parallax-background {
+        margin-top:-38px;
+    }
+
+}
+
+
+/*----768----*/
+@media (max-width: 768px){
+
+    .pase-ninja-quiero, .ya-soy, .empresas {
+        margin-top: 56px;
+    }
+    
+    .autenticos .parallax-background {
+        margin-top:-30px;
+    }
+
+    .autenticos .separador {
+        margin-top:-32px;
+    }
+
+    .hacen-cards {
+        padding-bottom: 80px;
+    }
+
+    .hacen-card {
+        height: 300px;
+        padding: 10px;
+    }
+
+    footer a {
+        padding: 0px 0px;
+    }
+
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-md.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+        margin-top: -150px;
+    }
+
+    .que-queremos-container h2 {
+        padding-bottom: 0px;
+    }
+
+    .empresas-card {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .empresas-card img {
+        margin: 0px;
+    }
+
+    .empresas .separador {
+        margin-top:-26px;
+    }
+
+    .empresas .parallax-background {
+        margin-top: -32px;
+    }
+
+    nav .active {
+        color: white;
+        background-image: url(../images/nav-background-link.png);
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+    }
+
+    .detiene .separador {
+        margin-top: -32px;
+    }
+
+    .detiene .parallax-background {
+        margin-top:-22px;
+    }
+}
+
+
+/*----576----*/
+@media (max-width: 576px){
+    
+    h2 {
+        font-size: 32px;
+        padding: 80px 0px 32px 0px;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    .autenticos .parallax-background {
+        margin-top:-20px;
+        height: 400px;
+    }
+
+    .autenticos .separador {
+        margin-top:-22px;
+    }
+
+    .button-secundario-dark {
+        padding: 10px;
+        margin: 12px 0px;
+    }
+
+    .button-secundario-light {
+        padding: 10px;
+        margin: 12px 0px;
+    }
+
+    .parallax-background img {
+        width: 400px;
+        padding: 50px 40px 0px 10px;
+    }
+
+    .home-somos-ninjas {
+        height: 50vh;
+        margin-top: 42px;
+    }
+
+    .somos-ninjas-left {
+        background-image: url(../images/home-somos-background-left.jpeg);
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 50vh;
+    }
+    
+    .somos-ninjas-left img{
+        padding: 100px 40px;
+        width: 2000px;
+        height: 50vh;
+    }
+    
+    .somos-ninjas-right {
+        display: none;
+        
+    }
+
+    .hacen-cards {
+        padding-bottom: 60px;
+    }
+
+    .hacen-card {
+        height: 250px;
+        margin: 5px;
+        padding: 24px;
+    }
+
+    .hacen img {
+        padding: 8px 0px;
+    }
+
+    footer img {
+        padding: 16px 8px 0px 8px;
+    }
+    
+    .iconos-redes {
+        width: 50px;
+    }
+
+    .footer-barra-arriba {
+        padding-bottom: 40px;
+    }
+
+    .footer-link-menu {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .mindset h4 {
+        padding: 40px 0px 80px 0px
+    }
+
+    .ya-soy, .empresas, .pase-ninja-quiero {
+        margin-top: 40px;
+    }
+
+    .pase-ninja-desktop {
+        display: none;
+    }
+
+    .pase-ninja-movil {
+        display: inline-block;
+        padding: 24px 0px;
+    }
+
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-sm.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+        margin-top: -150px;
+    }
+
+    .que-queremos-container img {
+        padding: 0px !important;
+        margin-top: -12px;
+    }
+
+    .que-queremos-container h2 {
+        background-color: #0C0B24;
+        padding-bottom: 80px;
+    }
+
+    .que-queremos-container h2 {
+        padding-bottom: 38px;
+    }
+
+    .autenticos .parallax-background img {
+        width: 380px;
+        padding: 50px 10px 0px 10px;
+        text-align:center;
+        position: absolute;
+    }
+
+    .en-grande .parallax-background {
+        margin-top: -24px;
+    }
+
+    .en-grande .separador-bottom {
+        margin-top: -10px;
+    }
+
+    .empresas-card {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .empresas-card img {
+        margin: 0px;
+        padding-top: 12px;
+    }
+
+    .empresas .separador {
+        margin-top:-26px;
+    }
+
+    .empresas .parallax-background {
+        margin-top: -22px;
+    }
+
+    nav .active {
+        color: white;
+        background-image: url(../images/nav-background-link.png);
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+    }
+
+    .detiene .parallax-background {
+        margin-top:-22px;
+    }
+    
+}
+
+    /*----400----*/
+@media (max-width: 400px) {
+    .queremos {
+        height: 570px;
+        background-image: url(../images/queremos-background-0.jpeg);
+       /*  background-repeat: no-repeat; */
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+        margin-top: -150px;
+    }
+
+    .detiene .separador {
+        margin-top: -28px;
+    }
+    .detiene .parallax-background {
+        margin-top:-15px;
+    }
+}
