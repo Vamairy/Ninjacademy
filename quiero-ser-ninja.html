@@ -47,23 +47,24 @@
             <!-- CONTENEDOR LISTA DE VÍNCULOS -->
             <div class="navbar-collapse collapse" id="menu02">
                 <ul class="navbar-nav text-center justify-content-center col-10 col-lg-10 col-sm-12 col-12">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">¿Quienes somos?</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#" onclick="clickQuienesSomos()"><audio id="audioQuienesSomos" src="./audio/espada-aguda-1seg.mp3"></audio>¿Quienes somos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./quiero-ser-ninja.html">Quiero ser Ninja</a>
+                        <a class="nav-link  active" href="#" onclick="clickQuieroSer()"><audio id="audioQuieroSer" src="./audio/espada-aguda-1seg.mp3"></audio>Quiero ser Ninja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./novedades.html">Novedades Ninja</a>
+                        <a class="nav-link" href="#" onclick="clickNovedades()"><audio id="audioNovedades" src="./audio/espada-aguda-1seg.mp3"></audio>Novedades Ninja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./empresas.html">Para empresas</a>
+                        <a class="nav-link" href="#" onclick="clickEmpresas()"><audio id="audioEmpresas" src="./audio/espada-aguda-1seg.mp3"></audio>Para empresas</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mb-lg-2 nav flex-column justify-content-end inicio-sesion">
                     <li class="nav-item inicio-sesion-big">
                         <div>
-                            <a class="nav-link item-final" href="https://ninjacademy.com.mx/login" target="_blank">
+                            <a class="nav-link item-final" href="#"  onclick="clickIniciarSesion()">
+                                <audio id="audioIniciarSesion" src="./audio/grito-combate-huya-1seg.mp3"></audio>
                                 <div class="row align-items-center justify-content-center">
                                     <div class="col-auto col-lg-6">
                                         <img src="./images/home-icon.png" alt="Iniciar sesion">
@@ -103,12 +104,12 @@
                         <div class="call-to-action row">
                             <div class="col col-md-6">
                                 <form action="https://ninjacademy.com.mx/login" target="_blank">
-                                    <button class="button-secundario-light">¡Ya tengo!</button>
+                                    <button class="button-secundario-light" onmousemove="hoverYaTengo()"><audio id="audioYaTengo" src="./audio/espada-aguda-1seg.mp3"></audio>¡Ya tengo!</button>
                                 </form>
                             </div>
                             <div class="col col-md-6">
                                 <form action="https://ninjacademy.com.mx/signup" target="_blank">
-                                    <button class="button-secundario-dark">Aún no, Obtenerlo</button>
+                                    <button class="button-secundario-dark" onmousemove="hoverAunNo()"><audio id="audioAunNo" src="./audio/grito-combate-huya-1seg.mp3"></audio>Aún no, Obtenerlo</button>
                                 </form>
                             </div>
                         </div>
@@ -221,12 +222,12 @@
                         <div class="call-to-action row">
                             <div class="col col-md-6">
                                 <form action="https://ninjacademy.com.mx/login" target="_blank">
-                                    <button class="button-secundario-light">¡Ya tengo!</button>
+                                    <button class="button-secundario-light" onmousemove="hoverYaTengo()"><audio id="audioYaTengo" src="./audio/espada-aguda-1seg.mp3"></audio>¡Ya tengo!</button>
                                 </form>
                             </div>
                             <div class="col col-md-6">
                                 <form action="https://ninjacademy.com.mx/signup" target="_blank">
-                                    <button class="button-secundario-dark">Aún no, Obtenerlo</button>
+                                    <button class="button-secundario-dark" onmousemove="hoverAunNo()"><audio id="audioAunNo" src="./audio/grito-combate-huya-1seg.mp3"></audio>Aún no, Obtenerlo</button>
                                 </form>
                             </div>
                         </div>
@@ -297,6 +298,9 @@
     </footer>
 
 <!--JAVASCRIPT-->
+
+    <!--AUDIO JS-->
+    <script src="./js/audio.js"></script>
 
     <!--JQUERY CDN-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
