@@ -82,11 +82,16 @@ function hoverBtnBlanco(){
    sonido_novedades.play();
 }
 
-/* SCROLL PARA MOBILE  */
+/* SCROLL/SWIP PARA MOBILE  */
 
 function scrollSomos(){
    let sonido_somos = document.getElementById("audioSomos");
    sonido_somos.play();
+}
+
+function scrollEmpresa(){
+   let sonido_empresa = document.getElementById("audioInfoEmpresas");
+   sonido_empresa.play();
 }
 
 

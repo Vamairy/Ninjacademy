@@ -63,16 +63,16 @@
                 
                 <ul class="navbar-nav text-center justify-content-center col-10 col-lg-10 col-sm-12 col-12">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" onclick="clickQuienesSomos()"><audio id="audioQuienesSomos" src="./audio/espada-aguda-1seg.mp3"></audio>¿Quienes somos?</a>
+                        <a class="nav-link" href="#" onclick="clickQuienesSomos()"><audio id="audioQuienesSomos" src="./audio/espada-grave-1seg.mp3"></audio>¿Quienes somos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="clickQuieroSer()"><audio id="audioQuieroSer" src="./audio/espada-aguda-1seg.mp3"></audio>Quiero ser Ninja</a>
+                        <a class="nav-link" href="#" onclick="clickQuieroSer()"><audio id="audioQuieroSer" src="./audio/espada-grave-1seg.mp3"></audio>Quiero ser Ninja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="clickNovedades()"><audio id="audioNovedades" src="./audio/espada-aguda-1seg.mp3"></audio>Novedades Ninja</a>
+                        <a class="nav-link" href="#" onclick="clickNovedades()"><audio id="audioNovedades" src="./audio/espada-grave-1seg.mp3"></audio>Novedades Ninja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="clickEmpresas()"><audio id="audioEmpresas" src="./audio/espada-aguda-1seg.mp3"></audio>Para empresas</a>
+                        <a class="nav-link" href="#" onclick="clickEmpresas()"><audio id="audioEmpresas" src="./audio/espada-grave-1seg.mp3"></audio>Para empresas</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mb-lg-2 nav flex-column justify-content-end inicio-sesion">
@@ -97,7 +97,7 @@
     </nav>
 
     <section class="home-somos-ninjas">
-        <div class="container-fluid" onmouseover="overSomos()" scroll="scrollSomos()">
+        <div class="container-fluid" onmouseover="overSomos()" ontouchend="scrollSomos()">
             <audio id="audioSomos" src="./audio/flauta-neutra-3seg.mp3"></audio>
             <div class="row justify-content-center align-items-center">
                 <div class="somos-ninjas-left col-12 col-md-5">
@@ -479,6 +479,7 @@
 
     <!--JQUERY CDN-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   
 
     <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
